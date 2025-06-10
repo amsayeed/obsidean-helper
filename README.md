@@ -16,6 +16,8 @@ A comprehensive web-based tool for Obsidian users that provides ready-to-use tem
 - **Callouts** - Note, warning, info, success, error, and tip callouts
 - **Diagrams** - Mermaid diagrams including flowcharts, sequence, state, and Gantt
 - **Canvas** - Templates specifically designed for Obsidian Canvas feature
+- **JSON Formatter** - Parse and format JSON with multiple output styles including nested tables
+- **DBDiagram Parser** - Convert dbdiagram.io schemas to documentation tables and diagrams
 
 ### 🚀 Key Functionality
 - **One-Click Copy** - Click any template to copy it to your clipboard
@@ -70,6 +72,7 @@ When you first click "🚀 Insert to Obsidian":
 
 ### Keyboard Shortcuts
 - `Ctrl/Cmd + 1-9` - Quick switch between template sections
+- `Ctrl/Cmd + 0` - Jump to JSON Formatter
 - `Esc` - Close any open modal
 
 ## 🎨 Using Canvas Templates
@@ -163,6 +166,70 @@ graph LR
 - ✅ Safari
 - ⚠️ Internet Explorer (Not supported)
 
+## 🔧 JSON Formatter
+
+The JSON Formatter provides powerful tools for working with JSON data:
+
+### Features
+- **Pretty Print** - Format JSON with proper indentation
+- **Compact** - Minify JSON to single line
+- **Markdown Code Block** - Wrap in ```json``` blocks
+- **Simple Table** - Convert to basic markdown table
+- **Nested Tables** - Convert complex nested JSON to multiple related tables
+
+### Nested Tables Feature
+Automatically analyzes complex JSON structures and creates:
+- Separate tables for nested objects and arrays
+- Cross-references between related data
+- Type information for each field
+- Summary statistics
+
+Perfect for documenting API responses, configuration files, and complex data structures.
+
+## 📊 DBDiagram Parser
+
+Convert dbdiagram.io table definitions to various documentation formats:
+
+### Input
+Paste your dbdiagram.io schema definition with:
+- Column definitions with types
+- Constraints (pk, unique, not null, etc.)
+- Foreign key references
+- Comments for section organization
+
+### Output Formats
+
+#### 1. **Full Documentation Table**
+8-column comprehensive table with:
+- Column name, type, definition (empty)
+- Constraints, source/mapping (empty)
+- Transformation logic (empty)
+- Example values (auto-generated)
+- Notes section (empty)
+
+#### 2. **Visual Table (Markdown)** ⭐ Recommended
+Beautiful markdown table with:
+- 🔑 Visual indicators for constraints
+- Section headers from comments
+- Relationship diagrams
+- Quick statistics summary
+
+#### 3. **Mermaid Diagram**
+Native Obsidian diagrams including:
+- Entity relationship diagram
+- Visual table structure
+- Class diagram with constraints
+
+#### 4. **Data Dictionary**
+Detailed documentation format with each column fully described.
+
+### Example Workflow
+1. Design your schema in dbdiagram.io
+2. Copy the table definition
+3. Paste into DBDiagram Parser
+4. Select "Visual Table" for best Obsidian compatibility
+5. Copy result to your documentation
+
 ## 🚀 Advanced Tips
 
 ### Creating Custom Templates
@@ -181,6 +248,18 @@ graph LR
 2. **System Design**: Start with Architecture Canvas
 3. **Project Planning**: Use Project Planning Canvas
 4. **Process Documentation**: Try Data Pipeline Canvas
+
+### JSON Documentation Workflow
+1. Copy API response
+2. Use JSON Formatter with "Nested Tables"
+3. Document each table's purpose
+4. Link tables in your knowledge base
+
+### Database Documentation Workflow
+1. Export schema from dbdiagram.io
+2. Use "Visual Table" format
+3. Fill in descriptions and mappings
+4. Create linked notes for each table
 
 ## 🤝 Contributing
 
