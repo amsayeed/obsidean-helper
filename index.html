@@ -1,0 +1,3543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian Helper - Markdown Templates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🗒️ Obsidian Helper</h1>
+        <p>Copy-paste ready templates for your Obsidian notes</p>
+        <a href="tutorial.html" class="tutorial-link" target="_blank">📖 Visual Tutorial</a>
+    </header>
+
+    <nav>
+        <button class="nav-btn active" data-section="todo">📝 Todo Lists</button>
+        <button class="nav-btn" data-section="icons">🎨 Icons & Symbols</button>
+        <button class="nav-btn" data-section="tables">📊 Tables</button>
+        <button class="nav-btn" data-section="code">💻 Code Blocks</button>
+        <button class="nav-btn" data-section="models">🗄️ Data Models</button>
+        <button class="nav-btn" data-section="architecture">🏗️ Architecture</button>
+        <button class="nav-btn" data-section="callouts">📢 Callouts</button>
+        <button class="nav-btn" data-section="diagrams">📐 Diagrams</button>
+        <button class="nav-btn" data-section="canvas">🎨 Canvas</button>
+        <button class="nav-btn" data-section="json">🔧 JSON Formatter</button>
+        <button class="nav-btn" data-section="dbdiagram">📊 DBDiagram Parser</button>
+    </nav>
+
+    <main>
+        <!-- Todo Lists Section -->
+        <section id="todo" class="content-section active">
+            <h2>Todo List Templates</h2>
+            
+            <div class="template-card">
+                <h3>Basic Todo List</h3>
+                <div class="preview">
+                    <pre>- [ ] Task 1
+- [ ] Task 2
+- [x] Completed task
+- [ ] Task 4</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="- [ ] Task 1
+- [ ] Task 2
+- [x] Completed task
+- [ ] Task 4">📋 Copy</button>
+                    <button class="insert-btn" data-content="- [ ] Task 1
+- [ ] Task 2
+- [x] Completed task
+- [ ] Task 4" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Prioritized Todo List</h3>
+                <div class="preview">
+                    <pre>## 🔴 High Priority
+- [ ] Critical task 1
+- [ ] Critical task 2
+
+## 🟡 Medium Priority
+- [ ] Important task 1
+- [ ] Important task 2
+
+## 🟢 Low Priority
+- [ ] Nice to have 1
+- [ ] Nice to have 2</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="## 🔴 High Priority
+- [ ] Critical task 1
+- [ ] Critical task 2
+
+## 🟡 Medium Priority
+- [ ] Important task 1
+- [ ] Important task 2
+
+## 🟢 Low Priority
+- [ ] Nice to have 1
+- [ ] Nice to have 2">📋 Copy</button>
+                    <button class="insert-btn" data-content="## 🔴 High Priority
+- [ ] Critical task 1
+- [ ] Critical task 2
+
+## 🟡 Medium Priority
+- [ ] Important task 1
+- [ ] Important task 2
+
+## 🟢 Low Priority
+- [ ] Nice to have 1
+- [ ] Nice to have 2" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Project Task List</h3>
+                <div class="preview">
+                    <pre>## Project: [Project Name]
+
+### 📋 Planning
+- [ ] Define requirements
+- [ ] Create timeline
+- [ ] Allocate resources
+
+### 🛠️ Development
+- [ ] Setup environment
+- [ ] Implement feature A
+- [ ] Implement feature B
+- [ ] Write tests
+
+### 🚀 Deployment
+- [ ] Code review
+- [ ] Deploy to staging
+- [ ] User acceptance testing
+- [ ] Deploy to production</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="## Project: [Project Name]
+
+### 📋 Planning
+- [ ] Define requirements
+- [ ] Create timeline
+- [ ] Allocate resources
+
+### 🛠️ Development
+- [ ] Setup environment
+- [ ] Implement feature A
+- [ ] Implement feature B
+- [ ] Write tests
+
+### 🚀 Deployment
+- [ ] Code review
+- [ ] Deploy to staging
+- [ ] User acceptance testing
+- [ ] Deploy to production">📋 Copy</button>
+                    <button class="insert-btn" data-content="## Project: [Project Name]
+
+### 📋 Planning
+- [ ] Define requirements
+- [ ] Create timeline
+- [ ] Allocate resources
+
+### 🛠️ Development
+- [ ] Setup environment
+- [ ] Implement feature A
+- [ ] Implement feature B
+- [ ] Write tests
+
+### 🚀 Deployment
+- [ ] Code review
+- [ ] Deploy to staging
+- [ ] User acceptance testing
+- [ ] Deploy to production" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Icons Section -->
+        <section id="icons" class="content-section">
+            <h2>Icons & Symbols</h2>
+            
+            <div class="icon-grid">
+                <div class="icon-category">
+                    <h3>Common Emojis</h3>
+                    <div class="icon-list">
+                        <span class="icon-item" data-copy="✅">✅ Check</span>
+                        <span class="icon-item" data-copy="❌">❌ Cross</span>
+                        <span class="icon-item" data-copy="⚠️">⚠️ Warning</span>
+                        <span class="icon-item" data-copy="💡">💡 Idea</span>
+                        <span class="icon-item" data-copy="🔔">🔔 Notification</span>
+                        <span class="icon-item" data-copy="📌">📌 Pin</span>
+                        <span class="icon-item" data-copy="🔗">🔗 Link</span>
+                        <span class="icon-item" data-copy="📝">📝 Note</span>
+                        <span class="icon-item" data-copy="📊">📊 Chart</span>
+                        <span class="icon-item" data-copy="🗂️">🗂️ Folder</span>
+                        <span class="icon-item" data-copy="🔍">🔍 Search</span>
+                        <span class="icon-item" data-copy="⭐">⭐ Star</span>
+                    </div>
+                </div>
+
+                <div class="icon-category">
+                    <h3>Development Icons</h3>
+                    <div class="icon-list">
+                        <span class="icon-item" data-copy="💻">💻 Computer</span>
+                        <span class="icon-item" data-copy="🐛">🐛 Bug</span>
+                        <span class="icon-item" data-copy="🔧">🔧 Wrench</span>
+                        <span class="icon-item" data-copy="🚀">🚀 Rocket</span>
+                        <span class="icon-item" data-copy="⚡">⚡ Lightning</span>
+                        <span class="icon-item" data-copy="🔥">🔥 Fire</span>
+                        <span class="icon-item" data-copy="📦">📦 Package</span>
+                        <span class="icon-item" data-copy="🗄️">🗄️ Database</span>
+                        <span class="icon-item" data-copy="☁️">☁️ Cloud</span>
+                        <span class="icon-item" data-copy="🔐">🔐 Lock</span>
+                        <span class="icon-item" data-copy="🔑">🔑 Key</span>
+                        <span class="icon-item" data-copy="⚙️">⚙️ Gear</span>
+                    </div>
+                </div>
+
+                <div class="icon-category">
+                    <h3>Arrows & Symbols</h3>
+                    <div class="icon-list">
+                        <span class="icon-item" data-copy="→">→ Right</span>
+                        <span class="icon-item" data-copy="←">← Left</span>
+                        <span class="icon-item" data-copy="↑">↑ Up</span>
+                        <span class="icon-item" data-copy="↓">↓ Down</span>
+                        <span class="icon-item" data-copy="↔️">↔️ Both ways</span>
+                        <span class="icon-item" data-copy="⇒">⇒ Implies</span>
+                        <span class="icon-item" data-copy="•">• Bullet</span>
+                        <span class="icon-item" data-copy="◦">◦ Circle</span>
+                        <span class="icon-item" data-copy="▸">▸ Triangle</span>
+                        <span class="icon-item" data-copy="▪">▪ Square</span>
+                        <span class="icon-item" data-copy="★">★ Star</span>
+                        <span class="icon-item" data-copy="✓">✓ Check</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tables Section -->
+        <section id="tables" class="content-section">
+            <h2>Table Templates</h2>
+            
+            <div class="template-card">
+                <h3>Basic Table</h3>
+                <div class="preview">
+                    <pre>| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| Data 1   | Data 2   | Data 3   |
+| Data 4   | Data 5   | Data 6   |</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| Data 1   | Data 2   | Data 3   |
+| Data 4   | Data 5   | Data 6   |">📋 Copy</button>
+                    <button class="insert-btn" data-content="| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| Data 1   | Data 2   | Data 3   |
+| Data 4   | Data 5   | Data 6   |" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Aligned Table</h3>
+                <div class="preview">
+                    <pre>| Left | Center | Right |
+|:-----|:------:|------:|
+| L1   | C1     | R1    |
+| L2   | C2     | R2    |
+| L3   | C3     | R3    |</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="| Left | Center | Right |
+|:-----|:------:|------:|
+| L1   | C1     | R1    |
+| L2   | C2     | R2    |
+| L3   | C3     | R3    |">📋 Copy</button>
+                    <button class="insert-btn" data-content="| Left | Center | Right |
+|:-----|:------:|------:|
+| L1   | C1     | R1    |
+| L2   | C2     | R2    |
+| L3   | C3     | R3    |" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Data Pipeline Status</h3>
+                <div class="preview">
+                    <pre>| Pipeline | Status | Last Run | Next Run | Owner |
+|----------|--------|----------|----------|-------|
+| ETL_Sales | ✅ Active | 2024-01-06 08:00 | 2024-01-07 08:00 | DataTeam |
+| ETL_Marketing | ⚠️ Warning | 2024-01-06 07:30 | 2024-01-07 07:30 | MarketingOps |
+| ETL_Finance | ❌ Failed | 2024-01-06 06:00 | Manual | FinanceIT |
+| ETL_Inventory | ✅ Active | 2024-01-06 09:00 | 2024-01-06 21:00 | Operations |</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="| Pipeline | Status | Last Run | Next Run | Owner |
+|----------|--------|----------|----------|-------|
+| ETL_Sales | ✅ Active | 2024-01-06 08:00 | 2024-01-07 08:00 | DataTeam |
+| ETL_Marketing | ⚠️ Warning | 2024-01-06 07:30 | 2024-01-07 07:30 | MarketingOps |
+| ETL_Finance | ❌ Failed | 2024-01-06 06:00 | Manual | FinanceIT |
+| ETL_Inventory | ✅ Active | 2024-01-06 09:00 | 2024-01-06 21:00 | Operations |">📋 Copy</button>
+                    <button class="insert-btn" data-content="| Pipeline | Status | Last Run | Next Run | Owner |
+|----------|--------|----------|----------|-------|
+| ETL_Sales | ✅ Active | 2024-01-06 08:00 | 2024-01-07 08:00 | DataTeam |
+| ETL_Marketing | ⚠️ Warning | 2024-01-06 07:30 | 2024-01-07 07:30 | MarketingOps |
+| ETL_Finance | ❌ Failed | 2024-01-06 06:00 | Manual | FinanceIT |
+| ETL_Inventory | ✅ Active | 2024-01-06 09:00 | 2024-01-06 21:00 | Operations |" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Database Schema</h3>
+                <div class="preview">
+                    <pre>| Field | Type | Constraints | Description |
+|-------|------|-------------|-------------|
+| id | UUID | PRIMARY KEY | Unique identifier |
+| created_at | TIMESTAMP | NOT NULL, DEFAULT NOW() | Record creation timestamp |
+| updated_at | TIMESTAMP | NOT NULL, DEFAULT NOW() | Last update timestamp |
+| status | ENUM | NOT NULL | Record status (active/inactive) |
+| metadata | JSONB | | Additional metadata |</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="| Field | Type | Constraints | Description |
+|-------|------|-------------|-------------|
+| id | UUID | PRIMARY KEY | Unique identifier |
+| created_at | TIMESTAMP | NOT NULL, DEFAULT NOW() | Record creation timestamp |
+| updated_at | TIMESTAMP | NOT NULL, DEFAULT NOW() | Last update timestamp |
+| status | ENUM | NOT NULL | Record status (active/inactive) |
+| metadata | JSONB | | Additional metadata |">📋 Copy</button>
+                    <button class="insert-btn" data-content="| Field | Type | Constraints | Description |
+|-------|------|-------------|-------------|
+| id | UUID | PRIMARY KEY | Unique identifier |
+| created_at | TIMESTAMP | NOT NULL, DEFAULT NOW() | Record creation timestamp |
+| updated_at | TIMESTAMP | NOT NULL, DEFAULT NOW() | Last update timestamp |
+| status | ENUM | NOT NULL | Record status (active/inactive) |
+| metadata | JSONB | | Additional metadata |" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Code Blocks Section -->
+        <section id="code" class="content-section">
+            <h2>Code Block Templates</h2>
+            
+            <div class="template-card">
+                <h3>Python Data Processing</h3>
+                <div class="preview">
+                    <pre>```python
+import pandas as pd
+import numpy as np
+from datetime import datetime
+
+# Load data
+df = pd.read_csv('data.csv')
+
+# Data cleaning
+df.dropna(inplace=True)
+df['date'] = pd.to_datetime(df['date'])
+
+# Feature engineering
+df['year'] = df['date'].dt.year
+df['month'] = df['date'].dt.month
+
+# Aggregation
+summary = df.groupby(['year', 'month']).agg({
+    'sales': 'sum',
+    'quantity': 'mean',
+    'customer_id': 'nunique'
+}).reset_index()
+
+print(summary.head())
+```</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="```python
+import pandas as pd
+import numpy as np
+from datetime import datetime
+
+# Load data
+df = pd.read_csv('data.csv')
+
+# Data cleaning
+df.dropna(inplace=True)
+df['date'] = pd.to_datetime(df['date'])
+
+# Feature engineering
+df['year'] = df['date'].dt.year
+df['month'] = df['date'].dt.month
+
+# Aggregation
+summary = df.groupby(['year', 'month']).agg({
+    'sales': 'sum',
+    'quantity': 'mean',
+    'customer_id': 'nunique'
+}).reset_index()
+
+print(summary.head())
+```">📋 Copy</button>
+                    <button class="insert-btn" data-content="```python
+import pandas as pd
+import numpy as np
+from datetime import datetime
+
+# Load data
+df = pd.read_csv('data.csv')
+
+# Data cleaning
+df.dropna(inplace=True)
+df['date'] = pd.to_datetime(df['date'])
+
+# Feature engineering
+df['year'] = df['date'].dt.year
+df['month'] = df['date'].dt.month
+
+# Aggregation
+summary = df.groupby(['year', 'month']).agg({
+    'sales': 'sum',
+    'quantity': 'mean',
+    'customer_id': 'nunique'
+}).reset_index()
+
+print(summary.head())
+```" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>SQL Query Template</h3>
+                <div class="preview">
+                    <pre>```sql
+-- Data Quality Check Query
+WITH data_quality AS (
+    SELECT 
+        COUNT(*) as total_records,
+        COUNT(DISTINCT customer_id) as unique_customers,
+        SUM(CASE WHEN order_date IS NULL THEN 1 ELSE 0 END) as null_dates,
+        SUM(CASE WHEN amount < 0 THEN 1 ELSE 0 END) as negative_amounts,
+        MIN(order_date) as earliest_date,
+        MAX(order_date) as latest_date
+    FROM orders
+    WHERE created_at >= CURRENT_DATE - INTERVAL '30 days'
+)
+SELECT * FROM data_quality;
+```</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="```sql
+-- Data Quality Check Query
+WITH data_quality AS (
+    SELECT 
+        COUNT(*) as total_records,
+        COUNT(DISTINCT customer_id) as unique_customers,
+        SUM(CASE WHEN order_date IS NULL THEN 1 ELSE 0 END) as null_dates,
+        SUM(CASE WHEN amount < 0 THEN 1 ELSE 0 END) as negative_amounts,
+        MIN(order_date) as earliest_date,
+        MAX(order_date) as latest_date
+    FROM orders
+    WHERE created_at >= CURRENT_DATE - INTERVAL '30 days'
+)
+SELECT * FROM data_quality;
+```">📋 Copy</button>
+                    <button class="insert-btn" data-content="```sql
+-- Data Quality Check Query
+WITH data_quality AS (
+    SELECT 
+        COUNT(*) as total_records,
+        COUNT(DISTINCT customer_id) as unique_customers,
+        SUM(CASE WHEN order_date IS NULL THEN 1 ELSE 0 END) as null_dates,
+        SUM(CASE WHEN amount < 0 THEN 1 ELSE 0 END) as negative_amounts,
+        MIN(order_date) as earliest_date,
+        MAX(order_date) as latest_date
+    FROM orders
+    WHERE created_at >= CURRENT_DATE - INTERVAL '30 days'
+)
+SELECT * FROM data_quality;
+```" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>YAML Configuration</h3>
+                <div class="preview">
+                    <pre>```yaml
+# Data Pipeline Configuration
+pipeline:
+  name: sales_etl_pipeline
+  schedule: "0 2 * * *"  # Daily at 2 AM
+  
+  sources:
+    - name: sales_db
+      type: postgresql
+      connection:
+        host: ${DB_HOST}
+        port: 5432
+        database: sales
+        
+  transformations:
+    - name: clean_data
+      type: sql
+      query: |
+        SELECT * FROM raw_sales
+        WHERE created_at >= CURRENT_DATE - 1
+        
+  destinations:
+    - name: data_warehouse
+      type: snowflake
+      table: fact_sales
+      mode: append
+```</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="```yaml
+# Data Pipeline Configuration
+pipeline:
+  name: sales_etl_pipeline
+  schedule: &quot;0 2 * * *&quot;  # Daily at 2 AM
+  
+  sources:
+    - name: sales_db
+      type: postgresql
+      connection:
+        host: ${DB_HOST}
+        port: 5432
+        database: sales
+        
+  transformations:
+    - name: clean_data
+      type: sql
+      query: |
+        SELECT * FROM raw_sales
+        WHERE created_at >= CURRENT_DATE - 1
+        
+  destinations:
+    - name: data_warehouse
+      type: snowflake
+      table: fact_sales
+      mode: append
+```">📋 Copy</button>
+                    <button class="insert-btn" data-content="```yaml
+# Data Pipeline Configuration
+pipeline:
+  name: sales_etl_pipeline
+  schedule: &quot;0 2 * * *&quot;  # Daily at 2 AM
+  
+  sources:
+    - name: sales_db
+      type: postgresql
+      connection:
+        host: ${DB_HOST}
+        port: 5432
+        database: sales
+        
+  transformations:
+    - name: clean_data
+      type: sql
+      query: |
+        SELECT * FROM raw_sales
+        WHERE created_at >= CURRENT_DATE - 1
+        
+  destinations:
+    - name: data_warehouse
+      type: snowflake
+      table: fact_sales
+      mode: append
+```" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Shell Script</h3>
+                <div class="preview">
+                    <pre>```bash
+#!/bin/bash
+# Data Backup Script
+
+# Configuration
+BACKUP_DIR="/backups/$(date +%Y%m%d)"
+DB_NAME="production"
+S3_BUCKET="s3://company-backups"
+
+# Create backup directory
+mkdir -p "$BACKUP_DIR"
+
+# Backup database
+echo "Starting database backup..."
+pg_dump $DB_NAME | gzip > "$BACKUP_DIR/db_backup.sql.gz"
+
+# Sync to S3
+echo "Uploading to S3..."
+aws s3 sync "$BACKUP_DIR" "$S3_BUCKET/$(date +%Y%m%d)/"
+
+# Cleanup old backups (keep last 7 days)
+find /backups -type d -mtime +7 -exec rm -rf {} +
+
+echo "Backup completed successfully!"
+```</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="```bash
+#!/bin/bash
+# Data Backup Script
+
+# Configuration
+BACKUP_DIR=&quot;/backups/$(date +%Y%m%d)&quot;
+DB_NAME=&quot;production&quot;
+S3_BUCKET=&quot;s3://company-backups&quot;
+
+# Create backup directory
+mkdir -p &quot;$BACKUP_DIR&quot;
+
+# Backup database
+echo &quot;Starting database backup...&quot;
+pg_dump $DB_NAME | gzip > &quot;$BACKUP_DIR/db_backup.sql.gz&quot;
+
+# Sync to S3
+echo &quot;Uploading to S3...&quot;
+aws s3 sync &quot;$BACKUP_DIR&quot; &quot;$S3_BUCKET/$(date +%Y%m%d)/&quot;
+
+# Cleanup old backups (keep last 7 days)
+find /backups -type d -mtime +7 -exec rm -rf {} +
+
+echo &quot;Backup completed successfully!&quot;
+```">📋 Copy</button>
+                    <button class="insert-btn" data-content="```bash
+#!/bin/bash
+# Data Backup Script
+
+# Configuration
+BACKUP_DIR=&quot;/backups/$(date +%Y%m%d)&quot;
+DB_NAME=&quot;production&quot;
+S3_BUCKET=&quot;s3://company-backups&quot;
+
+# Create backup directory
+mkdir -p &quot;$BACKUP_DIR&quot;
+
+# Backup database
+echo &quot;Starting database backup...&quot;
+pg_dump $DB_NAME | gzip > &quot;$BACKUP_DIR/db_backup.sql.gz&quot;
+
+# Sync to S3
+echo &quot;Uploading to S3...&quot;
+aws s3 sync &quot;$BACKUP_DIR&quot; &quot;$S3_BUCKET/$(date +%Y%m%d)/&quot;
+
+# Cleanup old backups (keep last 7 days)
+find /backups -type d -mtime +7 -exec rm -rf {} +
+
+echo &quot;Backup completed successfully!&quot;
+```" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Models Section -->
+        <section id="models" class="content-section">
+            <h2>Data Model Templates</h2>
+            
+            <div class="template-card">
+                <h3>Entity Documentation</h3>
+                <div class="preview">
+                    <pre># 📊 Customer Entity
+
+## Overview
+Central entity representing customers in the system.
+
+## Schema
+
+| Field | Type | Constraints | Description |
+|-------|------|-------------|-------------|
+| customer_id | UUID | PK | Unique customer identifier |
+| email | VARCHAR(255) | UNIQUE, NOT NULL | Customer email |
+| created_at | TIMESTAMP | NOT NULL | Account creation time |
+| status | ENUM | NOT NULL | Active/Inactive/Suspended |
+| segment | VARCHAR(50) | | Customer segment |
+
+## Relationships
+- **Orders**: One-to-Many (customer_id → orders.customer_id)
+- **Addresses**: One-to-Many (customer_id → addresses.customer_id)
+- **Preferences**: One-to-One (customer_id → preferences.customer_id)
+
+## Business Rules
+1. Email must be verified before activation
+2. Suspended customers cannot place orders
+3. Segment updated based on purchase history</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="# 📊 Customer Entity
+
+## Overview
+Central entity representing customers in the system.
+
+## Schema
+
+| Field | Type | Constraints | Description |
+|-------|------|-------------|-------------|
+| customer_id | UUID | PK | Unique customer identifier |
+| email | VARCHAR(255) | UNIQUE, NOT NULL | Customer email |
+| created_at | TIMESTAMP | NOT NULL | Account creation time |
+| status | ENUM | NOT NULL | Active/Inactive/Suspended |
+| segment | VARCHAR(50) | | Customer segment |
+
+## Relationships
+- **Orders**: One-to-Many (customer_id → orders.customer_id)
+- **Addresses**: One-to-Many (customer_id → addresses.customer_id)
+- **Preferences**: One-to-One (customer_id → preferences.customer_id)
+
+## Business Rules
+1. Email must be verified before activation
+2. Suspended customers cannot place orders
+3. Segment updated based on purchase history">📋 Copy</button>
+                    <button class="insert-btn" data-content="# 📊 Customer Entity
+
+## Overview
+Central entity representing customers in the system.
+
+## Schema
+
+| Field | Type | Constraints | Description |
+|-------|------|-------------|-------------|
+| customer_id | UUID | PK | Unique customer identifier |
+| email | VARCHAR(255) | UNIQUE, NOT NULL | Customer email |
+| created_at | TIMESTAMP | NOT NULL | Account creation time |
+| status | ENUM | NOT NULL | Active/Inactive/Suspended |
+| segment | VARCHAR(50) | | Customer segment |
+
+## Relationships
+- **Orders**: One-to-Many (customer_id → orders.customer_id)
+- **Addresses**: One-to-Many (customer_id → addresses.customer_id)
+- **Preferences**: One-to-One (customer_id → preferences.customer_id)
+
+## Business Rules
+1. Email must be verified before activation
+2. Suspended customers cannot place orders
+3. Segment updated based on purchase history" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Data Dictionary</h3>
+                <div class="preview">
+                    <pre># 📚 Data Dictionary - Sales Data Mart
+
+## Table: fact_sales
+
+### Description
+Fact table containing all sales transactions with associated dimensions.
+
+### Columns
+
+| Column | Data Type | Nullable | Default | Description | Example |
+|--------|-----------|----------|---------|-------------|---------|
+| sale_id | BIGINT | NO | AUTO_INCREMENT | Unique sale identifier | 1234567 |
+| sale_date | DATE | NO | | Date of sale | 2024-01-06 |
+| customer_key | INT | NO | | FK to dim_customer | 10001 |
+| product_key | INT | NO | | FK to dim_product | 20001 |
+| store_key | INT | NO | | FK to dim_store | 301 |
+| quantity | INT | NO | | Units sold | 5 |
+| unit_price | DECIMAL(10,2) | NO | | Price per unit | 19.99 |
+| total_amount | DECIMAL(10,2) | NO | | Total sale amount | 99.95 |
+| discount_amount | DECIMAL(10,2) | YES | 0.00 | Discount applied | 10.00 |
+
+### Indexes
+- PRIMARY KEY: sale_id
+- INDEX: idx_sale_date (sale_date)
+- INDEX: idx_customer (customer_key, sale_date)</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="# 📚 Data Dictionary - Sales Data Mart
+
+## Table: fact_sales
+
+### Description
+Fact table containing all sales transactions with associated dimensions.
+
+### Columns
+
+| Column | Data Type | Nullable | Default | Description | Example |
+|--------|-----------|----------|---------|-------------|---------|
+| sale_id | BIGINT | NO | AUTO_INCREMENT | Unique sale identifier | 1234567 |
+| sale_date | DATE | NO | | Date of sale | 2024-01-06 |
+| customer_key | INT | NO | | FK to dim_customer | 10001 |
+| product_key | INT | NO | | FK to dim_product | 20001 |
+| store_key | INT | NO | | FK to dim_store | 301 |
+| quantity | INT | NO | | Units sold | 5 |
+| unit_price | DECIMAL(10,2) | NO | | Price per unit | 19.99 |
+| total_amount | DECIMAL(10,2) | NO | | Total sale amount | 99.95 |
+| discount_amount | DECIMAL(10,2) | YES | 0.00 | Discount applied | 10.00 |
+
+### Indexes
+- PRIMARY KEY: sale_id
+- INDEX: idx_sale_date (sale_date)
+- INDEX: idx_customer (customer_key, sale_date)">📋 Copy</button>
+                    <button class="insert-btn" data-content="# 📚 Data Dictionary - Sales Data Mart
+
+## Table: fact_sales
+
+### Description
+Fact table containing all sales transactions with associated dimensions.
+
+### Columns
+
+| Column | Data Type | Nullable | Default | Description | Example |
+|--------|-----------|----------|---------|-------------|---------|
+| sale_id | BIGINT | NO | AUTO_INCREMENT | Unique sale identifier | 1234567 |
+| sale_date | DATE | NO | | Date of sale | 2024-01-06 |
+| customer_key | INT | NO | | FK to dim_customer | 10001 |
+| product_key | INT | NO | | FK to dim_product | 20001 |
+| store_key | INT | NO | | FK to dim_store | 301 |
+| quantity | INT | NO | | Units sold | 5 |
+| unit_price | DECIMAL(10,2) | NO | | Price per unit | 19.99 |
+| total_amount | DECIMAL(10,2) | NO | | Total sale amount | 99.95 |
+| discount_amount | DECIMAL(10,2) | YES | 0.00 | Discount applied | 10.00 |
+
+### Indexes
+- PRIMARY KEY: sale_id
+- INDEX: idx_sale_date (sale_date)
+- INDEX: idx_customer (customer_key, sale_date)" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>ERD in Mermaid</h3>
+                <div class="preview">
+                    <pre>```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    CUSTOMER ||--o{ ADDRESS : has
+    ORDER ||--o{ ORDER_ITEM : contains
+    PRODUCT ||--o{ ORDER_ITEM : "is in"
+    
+    CUSTOMER {
+        uuid customer_id PK
+        string email UK
+        string first_name
+        string last_name
+        datetime created_at
+        enum status
+    }
+    
+    ORDER {
+        uuid order_id PK
+        uuid customer_id FK
+        datetime order_date
+        decimal total_amount
+        enum status
+    }
+    
+    ORDER_ITEM {
+        uuid item_id PK
+        uuid order_id FK
+        uuid product_id FK
+        int quantity
+        decimal unit_price
+    }
+    
+    PRODUCT {
+        uuid product_id PK
+        string sku UK
+        string name
+        decimal price
+        int stock_quantity
+    }
+```</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    CUSTOMER ||--o{ ADDRESS : has
+    ORDER ||--o{ ORDER_ITEM : contains
+    PRODUCT ||--o{ ORDER_ITEM : &quot;is in&quot;
+    
+    CUSTOMER {
+        uuid customer_id PK
+        string email UK
+        string first_name
+        string last_name
+        datetime created_at
+        enum status
+    }
+    
+    ORDER {
+        uuid order_id PK
+        uuid customer_id FK
+        datetime order_date
+        decimal total_amount
+        enum status
+    }
+    
+    ORDER_ITEM {
+        uuid item_id PK
+        uuid order_id FK
+        uuid product_id FK
+        int quantity
+        decimal unit_price
+    }
+    
+    PRODUCT {
+        uuid product_id PK
+        string sku UK
+        string name
+        decimal price
+        int stock_quantity
+    }
+```">📋 Copy</button>
+                    <button class="insert-btn" data-content="```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    CUSTOMER ||--o{ ADDRESS : has
+    ORDER ||--o{ ORDER_ITEM : contains
+    PRODUCT ||--o{ ORDER_ITEM : &quot;is in&quot;
+    
+    CUSTOMER {
+        uuid customer_id PK
+        string email UK
+        string first_name
+        string last_name
+        datetime created_at
+        enum status
+    }
+    
+    ORDER {
+        uuid order_id PK
+        uuid customer_id FK
+        datetime order_date
+        decimal total_amount
+        enum status
+    }
+    
+    ORDER_ITEM {
+        uuid item_id PK
+        uuid order_id FK
+        uuid product_id FK
+        int quantity
+        decimal unit_price
+    }
+    
+    PRODUCT {
+        uuid product_id PK
+        string sku UK
+        string name
+        decimal price
+        int stock_quantity
+    }
+```" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture Section -->
+        <section id="architecture" class="content-section">
+            <h2>Data Architecture Templates</h2>
+            
+            <div class="template-card">
+                <h3>Data Flow Diagram</h3>
+                <div class="preview">
+                    <pre>```mermaid
+graph LR
+    %% Data Sources
+    subgraph Sources
+        A[CRM System]
+        B[E-commerce Platform]
+        C[Mobile App]
+        D[Third-party APIs]
+    end
+    
+    %% Ingestion Layer
+    subgraph Ingestion
+        E[Kafka]
+        F[Airflow]
+    end
+    
+    %% Storage Layer
+    subgraph Storage
+        G[(Raw Data Lake)]
+        H[(Staging Area)]
+        I[(Data Warehouse)]
+    end
+    
+    %% Processing Layer
+    subgraph Processing
+        J[Spark]
+        K[DBT]
+    end
+    
+    %% Serving Layer
+    subgraph Serving
+        L[BI Tools]
+        M[APIs]
+        N[ML Models]
+    end
+    
+    %% Connections
+    A --> E
+    B --> E
+    C --> E
+    D --> F
+    E --> G
+    F --> G
+    G --> J
+    J --> H
+    H --> K
+    K --> I
+    I --> L
+    I --> M
+    I --> N
+```</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="```mermaid
+graph LR
+    %% Data Sources
+    subgraph Sources
+        A[CRM System]
+        B[E-commerce Platform]
+        C[Mobile App]
+        D[Third-party APIs]
+    end
+    
+    %% Ingestion Layer
+    subgraph Ingestion
+        E[Kafka]
+        F[Airflow]
+    end
+    
+    %% Storage Layer
+    subgraph Storage
+        G[(Raw Data Lake)]
+        H[(Staging Area)]
+        I[(Data Warehouse)]
+    end
+    
+    %% Processing Layer
+    subgraph Processing
+        J[Spark]
+        K[DBT]
+    end
+    
+    %% Serving Layer
+    subgraph Serving
+        L[BI Tools]
+        M[APIs]
+        N[ML Models]
+    end
+    
+    %% Connections
+    A --> E
+    B --> E
+    C --> E
+    D --> F
+    E --> G
+    F --> G
+    G --> J
+    J --> H
+    H --> K
+    K --> I
+    I --> L
+    I --> M
+    I --> N
+```">📋 Copy</button>
+                    <button class="insert-btn" data-content="```mermaid
+graph LR
+    %% Data Sources
+    subgraph Sources
+        A[CRM System]
+        B[E-commerce Platform]
+        C[Mobile App]
+        D[Third-party APIs]
+    end
+    
+    %% Ingestion Layer
+    subgraph Ingestion
+        E[Kafka]
+        F[Airflow]
+    end
+    
+    %% Storage Layer
+    subgraph Storage
+        G[(Raw Data Lake)]
+        H[(Staging Area)]
+        I[(Data Warehouse)]
+    end
+    
+    %% Processing Layer
+    subgraph Processing
+        J[Spark]
+        K[DBT]
+    end
+    
+    %% Serving Layer
+    subgraph Serving
+        L[BI Tools]
+        M[APIs]
+        N[ML Models]
+    end
+    
+    %% Connections
+    A --> E
+    B --> E
+    C --> E
+    D --> F
+    E --> G
+    F --> G
+    G --> J
+    J --> H
+    H --> K
+    K --> I
+    I --> L
+    I --> M
+    I --> N
+```" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Architecture Overview</h3>
+                <div class="preview">
+                    <pre># 🏗️ Data Platform Architecture
+
+## Overview
+Modern cloud-native data platform built on AWS/GCP/Azure.
+
+## Components
+
+### 1. Data Ingestion Layer
+- **Batch Processing**: Apache Airflow
+- **Stream Processing**: Apache Kafka / Kinesis
+- **API Integration**: Custom Python services
+- **File Transfer**: AWS Transfer Family
+
+### 2. Storage Layer
+- **Raw Data Lake**: S3 / GCS / Azure Blob
+- **Processed Data**: Delta Lake / Iceberg
+- **Data Warehouse**: Snowflake / BigQuery / Redshift
+- **Operational Store**: PostgreSQL / MongoDB
+
+### 3. Processing Layer
+- **Batch ETL**: Apache Spark / AWS Glue
+- **Stream Processing**: Spark Streaming / Flink
+- **Data Transformation**: DBT
+- **Data Quality**: Great Expectations
+
+### 4. Serving Layer
+- **BI/Analytics**: Tableau / Power BI / Looker
+- **Data API**: GraphQL / REST APIs
+- **ML Platform**: SageMaker / Vertex AI
+- **Data Catalog**: DataHub / Alation
+
+## Security & Governance
+- **Authentication**: SSO with SAML/OAuth
+- **Encryption**: At-rest and in-transit
+- **Access Control**: IAM roles and policies
+- **Compliance**: GDPR, CCPA compliant</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="# 🏗️ Data Platform Architecture
+
+## Overview
+Modern cloud-native data platform built on AWS/GCP/Azure.
+
+## Components
+
+### 1. Data Ingestion Layer
+- **Batch Processing**: Apache Airflow
+- **Stream Processing**: Apache Kafka / Kinesis
+- **API Integration**: Custom Python services
+- **File Transfer**: AWS Transfer Family
+
+### 2. Storage Layer
+- **Raw Data Lake**: S3 / GCS / Azure Blob
+- **Processed Data**: Delta Lake / Iceberg
+- **Data Warehouse**: Snowflake / BigQuery / Redshift
+- **Operational Store**: PostgreSQL / MongoDB
+
+### 3. Processing Layer
+- **Batch ETL**: Apache Spark / AWS Glue
+- **Stream Processing**: Spark Streaming / Flink
+- **Data Transformation**: DBT
+- **Data Quality**: Great Expectations
+
+### 4. Serving Layer
+- **BI/Analytics**: Tableau / Power BI / Looker
+- **Data API**: GraphQL / REST APIs
+- **ML Platform**: SageMaker / Vertex AI
+- **Data Catalog**: DataHub / Alation
+
+## Security & Governance
+- **Authentication**: SSO with SAML/OAuth
+- **Encryption**: At-rest and in-transit
+- **Access Control**: IAM roles and policies
+- **Compliance**: GDPR, CCPA compliant">📋 Copy</button>
+                    <button class="insert-btn" data-content="# 🏗️ Data Platform Architecture
+
+## Overview
+Modern cloud-native data platform built on AWS/GCP/Azure.
+
+## Components
+
+### 1. Data Ingestion Layer
+- **Batch Processing**: Apache Airflow
+- **Stream Processing**: Apache Kafka / Kinesis
+- **API Integration**: Custom Python services
+- **File Transfer**: AWS Transfer Family
+
+### 2. Storage Layer
+- **Raw Data Lake**: S3 / GCS / Azure Blob
+- **Processed Data**: Delta Lake / Iceberg
+- **Data Warehouse**: Snowflake / BigQuery / Redshift
+- **Operational Store**: PostgreSQL / MongoDB
+
+### 3. Processing Layer
+- **Batch ETL**: Apache Spark / AWS Glue
+- **Stream Processing**: Spark Streaming / Flink
+- **Data Transformation**: DBT
+- **Data Quality**: Great Expectations
+
+### 4. Serving Layer
+- **BI/Analytics**: Tableau / Power BI / Looker
+- **Data API**: GraphQL / REST APIs
+- **ML Platform**: SageMaker / Vertex AI
+- **Data Catalog**: DataHub / Alation
+
+## Security & Governance
+- **Authentication**: SSO with SAML/OAuth
+- **Encryption**: At-rest and in-transit
+- **Access Control**: IAM roles and policies
+- **Compliance**: GDPR, CCPA compliant" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Lakehouse Architecture</h3>
+                <div class="preview">
+                    <pre>```mermaid
+graph TB
+    subgraph "Data Sources"
+        DS1[Transactional DBs]
+        DS2[SaaS Applications]
+        DS3[IoT Devices]
+        DS4[Web/Mobile Events]
+    end
+    
+    subgraph "Ingestion"
+        ING1[Change Data Capture]
+        ING2[Batch ETL]
+        ING3[Stream Processing]
+    end
+    
+    subgraph "Lakehouse Storage"
+        subgraph "Bronze Layer"
+            B1[(Raw Data)]
+            B2[(Archived Data)]
+        end
+        
+        subgraph "Silver Layer"
+            S1[(Cleansed Data)]
+            S2[(Conformed Data)]
+        end
+        
+        subgraph "Gold Layer"
+            G1[(Business Aggregates)]
+            G2[(Feature Store)]
+        end
+    end
+    
+    subgraph "Compute Engine"
+        CE1[Spark]
+        CE2[Presto/Trino]
+        CE3[Databricks]
+    end
+    
+    subgraph "Consumers"
+        C1[BI Dashboards]
+        C2[ML Models]
+        C3[Ad-hoc Analytics]
+        C4[Operational Apps]
+    end
+    
+    DS1 --> ING1
+    DS2 --> ING2
+    DS3 --> ING3
+    DS4 --> ING3
+    
+    ING1 --> B1
+    ING2 --> B1
+    ING3 --> B1
+    
+    B1 --> CE1
+    CE1 --> S1
+    S1 --> CE2
+    CE2 --> G1
+    
+    G1 --> C1
+    G2 --> C2
+    G1 --> C3
+    S2 --> C4
+```</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="```mermaid
+graph TB
+    subgraph &quot;Data Sources&quot;
+        DS1[Transactional DBs]
+        DS2[SaaS Applications]
+        DS3[IoT Devices]
+        DS4[Web/Mobile Events]
+    end
+    
+    subgraph &quot;Ingestion&quot;
+        ING1[Change Data Capture]
+        ING2[Batch ETL]
+        ING3[Stream Processing]
+    end
+    
+    subgraph &quot;Lakehouse Storage&quot;
+        subgraph &quot;Bronze Layer&quot;
+            B1[(Raw Data)]
+            B2[(Archived Data)]
+        end
+        
+        subgraph &quot;Silver Layer&quot;
+            S1[(Cleansed Data)]
+            S2[(Conformed Data)]
+        end
+        
+        subgraph &quot;Gold Layer&quot;
+            G1[(Business Aggregates)]
+            G2[(Feature Store)]
+        end
+    end
+    
+    subgraph &quot;Compute Engine&quot;
+        CE1[Spark]
+        CE2[Presto/Trino]
+        CE3[Databricks]
+    end
+    
+    subgraph &quot;Consumers&quot;
+        C1[BI Dashboards]
+        C2[ML Models]
+        C3[Ad-hoc Analytics]
+        C4[Operational Apps]
+    end
+    
+    DS1 --> ING1
+    DS2 --> ING2
+    DS3 --> ING3
+    DS4 --> ING3
+    
+    ING1 --> B1
+    ING2 --> B1
+    ING3 --> B1
+    
+    B1 --> CE1
+    CE1 --> S1
+    S1 --> CE2
+    CE2 --> G1
+    
+    G1 --> C1
+    G2 --> C2
+    G1 --> C3
+    S2 --> C4
+```">📋 Copy</button>
+                    <button class="insert-btn" data-content="```mermaid
+graph TB
+    subgraph &quot;Data Sources&quot;
+        DS1[Transactional DBs]
+        DS2[SaaS Applications]
+        DS3[IoT Devices]
+        DS4[Web/Mobile Events]
+    end
+    
+    subgraph &quot;Ingestion&quot;
+        ING1[Change Data Capture]
+        ING2[Batch ETL]
+        ING3[Stream Processing]
+    end
+    
+    subgraph &quot;Lakehouse Storage&quot;
+        subgraph &quot;Bronze Layer&quot;
+            B1[(Raw Data)]
+            B2[(Archived Data)]
+        end
+        
+        subgraph &quot;Silver Layer&quot;
+            S1[(Cleansed Data)]
+            S2[(Conformed Data)]
+        end
+        
+        subgraph &quot;Gold Layer&quot;
+            G1[(Business Aggregates)]
+            G2[(Feature Store)]
+        end
+    end
+    
+    subgraph &quot;Compute Engine&quot;
+        CE1[Spark]
+        CE2[Presto/Trino]
+        CE3[Databricks]
+    end
+    
+    subgraph &quot;Consumers&quot;
+        C1[BI Dashboards]
+        C2[ML Models]
+        C3[Ad-hoc Analytics]
+        C4[Operational Apps]
+    end
+    
+    DS1 --> ING1
+    DS2 --> ING2
+    DS3 --> ING3
+    DS4 --> ING3
+    
+    ING1 --> B1
+    ING2 --> B1
+    ING3 --> B1
+    
+    B1 --> CE1
+    CE1 --> S1
+    S1 --> CE2
+    CE2 --> G1
+    
+    G1 --> C1
+    G2 --> C2
+    G1 --> C3
+    S2 --> C4
+```" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Callouts Section -->
+        <section id="callouts" class="content-section">
+            <h2>Callout Templates</h2>
+            
+            <div class="template-card">
+                <h3>Note Callout</h3>
+                <div class="preview">
+                    <pre>> [!NOTE]
+> This is a note callout.
+> It provides additional information or context.</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="> [!NOTE]
+> This is a note callout.
+> It provides additional information or context.">📋 Copy</button>
+                    <button class="insert-btn" data-content="> [!NOTE]
+> This is a note callout.
+> It provides additional information or context." data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Warning Callout</h3>
+                <div class="preview">
+                    <pre>> [!WARNING]
+> This is a warning callout.
+> Use it to highlight potential issues or important considerations.</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="> [!WARNING]
+> This is a warning callout.
+> Use it to highlight potential issues or important considerations.">📋 Copy</button>
+                    <button class="insert-btn" data-content="> [!WARNING]
+> This is a warning callout.
+> Use it to highlight potential issues or important considerations." data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Info Callout</h3>
+                <div class="preview">
+                    <pre>> [!INFO]
+> This is an info callout.
+> Perfect for highlighting key information or tips.</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="> [!INFO]
+> This is an info callout.
+> Perfect for highlighting key information or tips.">📋 Copy</button>
+                    <button class="insert-btn" data-content="> [!INFO]
+> This is an info callout.
+> Perfect for highlighting key information or tips." data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Success Callout</h3>
+                <div class="preview">
+                    <pre>> [!SUCCESS]
+> This is a success callout.
+> Use it to indicate successful operations or positive outcomes.</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="> [!SUCCESS]
+> This is a success callout.
+> Use it to indicate successful operations or positive outcomes.">📋 Copy</button>
+                    <button class="insert-btn" data-content="> [!SUCCESS]
+> This is a success callout.
+> Use it to indicate successful operations or positive outcomes." data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Error Callout</h3>
+                <div class="preview">
+                    <pre>> [!ERROR]
+> This is an error callout.
+> Use it to highlight errors or critical issues that need attention.</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="> [!ERROR]
+> This is an error callout.
+> Use it to highlight errors or critical issues that need attention.">📋 Copy</button>
+                    <button class="insert-btn" data-content="> [!ERROR]
+> This is an error callout.
+> Use it to highlight errors or critical issues that need attention." data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Tip Callout</h3>
+                <div class="preview">
+                    <pre>> [!TIP]
+> This is a tip callout.
+> Share helpful tips and best practices here.</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="> [!TIP]
+> This is a tip callout.
+> Share helpful tips and best practices here.">📋 Copy</button>
+                    <button class="insert-btn" data-content="> [!TIP]
+> This is a tip callout.
+> Share helpful tips and best practices here." data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diagrams Section -->
+        <section id="diagrams" class="content-section">
+            <h2>Diagram Templates</h2>
+            
+            <div class="template-card">
+                <h3>Flowchart</h3>
+                <div class="preview">
+                    <pre>```mermaid
+flowchart TD
+    A[Start] --> B{Is data valid?}
+    B -->|Yes| C[Process Data]
+    B -->|No| D[Clean Data]
+    D --> B
+    C --> E[Transform Data]
+    E --> F[Load to Warehouse]
+    F --> G[End]
+```</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="```mermaid
+flowchart TD
+    A[Start] --> B{Is data valid?}
+    B -->|Yes| C[Process Data]
+    B -->|No| D[Clean Data]
+    D --> B
+    C --> E[Transform Data]
+    E --> F[Load to Warehouse]
+    F --> G[End]
+```">📋 Copy</button>
+                    <button class="insert-btn" data-content="```mermaid
+flowchart TD
+    A[Start] --> B{Is data valid?}
+    B -->|Yes| C[Process Data]
+    B -->|No| D[Clean Data]
+    D --> B
+    C --> E[Transform Data]
+    E --> F[Load to Warehouse]
+    F --> G[End]
+```" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Sequence Diagram</h3>
+                <div class="preview">
+                    <pre>```mermaid
+sequenceDiagram
+    participant U as User
+    participant A as API
+    participant D as Database
+    participant C as Cache
+    
+    U->>A: Request Data
+    A->>C: Check Cache
+    alt Cache Hit
+        C-->>A: Return Cached Data
+    else Cache Miss
+        A->>D: Query Database
+        D-->>A: Return Data
+        A->>C: Update Cache
+    end
+    A-->>U: Return Response
+```</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="```mermaid
+sequenceDiagram
+    participant U as User
+    participant A as API
+    participant D as Database
+    participant C as Cache
+    
+    U->>A: Request Data
+    A->>C: Check Cache
+    alt Cache Hit
+        C-->>A: Return Cached Data
+    else Cache Miss
+        A->>D: Query Database
+        D-->>A: Return Data
+        A->>C: Update Cache
+    end
+    A-->>U: Return Response
+```">📋 Copy</button>
+                    <button class="insert-btn" data-content="```mermaid
+sequenceDiagram
+    participant U as User
+    participant A as API
+    participant D as Database
+    participant C as Cache
+    
+    U->>A: Request Data
+    A->>C: Check Cache
+    alt Cache Hit
+        C-->>A: Return Cached Data
+    else Cache Miss
+        A->>D: Query Database
+        D-->>A: Return Data
+        A->>C: Update Cache
+    end
+    A-->>U: Return Response
+```" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>State Diagram</h3>
+                <div class="preview">
+                    <pre>```mermaid
+stateDiagram-v2
+    [*] --> Draft
+    Draft --> InReview: Submit for Review
+    InReview --> Approved: Approve
+    InReview --> Draft: Request Changes
+    Approved --> Published: Publish
+    Published --> Archived: Archive
+    Archived --> [*]
+    
+    Draft: Draft State\n- Can edit\n- Can delete
+    InReview: In Review\n- Read only\n- Awaiting approval
+    Approved: Approved\n- Ready to publish
+    Published: Published\n- Live version
+    Archived: Archived\n- Historical record
+```</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="```mermaid
+stateDiagram-v2
+    [*] --> Draft
+    Draft --> InReview: Submit for Review
+    InReview --> Approved: Approve
+    InReview --> Draft: Request Changes
+    Approved --> Published: Publish
+    Published --> Archived: Archive
+    Archived --> [*]
+    
+    Draft: Draft State\n- Can edit\n- Can delete
+    InReview: In Review\n- Read only\n- Awaiting approval
+    Approved: Approved\n- Ready to publish
+    Published: Published\n- Live version
+    Archived: Archived\n- Historical record
+```">📋 Copy</button>
+                    <button class="insert-btn" data-content="```mermaid
+stateDiagram-v2
+    [*] --> Draft
+    Draft --> InReview: Submit for Review
+    InReview --> Approved: Approve
+    InReview --> Draft: Request Changes
+    Approved --> Published: Publish
+    Published --> Archived: Archive
+    Archived --> [*]
+    
+    Draft: Draft State\n- Can edit\n- Can delete
+    InReview: In Review\n- Read only\n- Awaiting approval
+    Approved: Approved\n- Ready to publish
+    Published: Published\n- Live version
+    Archived: Archived\n- Historical record
+```" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Gantt Chart</h3>
+                <div class="preview">
+                    <pre>```mermaid
+gantt
+    title Data Migration Project Timeline
+    dateFormat  YYYY-MM-DD
+    section Planning
+    Requirements Analysis    :done,    des1, 2024-01-01, 2024-01-07
+    Architecture Design      :done,    des2, after des1, 7d
+    
+    section Development
+    Data Extraction Scripts  :active,  dev1, 2024-01-15, 10d
+    Transformation Logic     :         dev2, after dev1, 14d
+    Load Procedures         :         dev3, after dev2, 7d
+    
+    section Testing
+    Unit Testing            :         test1, after dev1, 21d
+    Integration Testing     :         test2, after dev3, 7d
+    UAT                     :         test3, after test2, 5d
+    
+    section Deployment
+    Production Migration    :         dep1, after test3, 3d
+    Monitoring Setup        :         dep2, after dep1, 2d
+```</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="```mermaid
+gantt
+    title Data Migration Project Timeline
+    dateFormat  YYYY-MM-DD
+    section Planning
+    Requirements Analysis    :done,    des1, 2024-01-01, 2024-01-07
+    Architecture Design      :done,    des2, after des1, 7d
+    
+    section Development
+    Data Extraction Scripts  :active,  dev1, 2024-01-15, 10d
+    Transformation Logic     :         dev2, after dev1, 14d
+    Load Procedures         :         dev3, after dev2, 7d
+    
+    section Testing
+    Unit Testing            :         test1, after dev1, 21d
+    Integration Testing     :         test2, after dev3, 7d
+    UAT                     :         test3, after test2, 5d
+    
+    section Deployment
+    Production Migration    :         dep1, after test3, 3d
+    Monitoring Setup        :         dep2, after dep1, 2d
+```">📋 Copy</button>
+                    <button class="insert-btn" data-content="```mermaid
+gantt
+    title Data Migration Project Timeline
+    dateFormat  YYYY-MM-DD
+    section Planning
+    Requirements Analysis    :done,    des1, 2024-01-01, 2024-01-07
+    Architecture Design      :done,    des2, after des1, 7d
+    
+    section Development
+    Data Extraction Scripts  :active,  dev1, 2024-01-15, 10d
+    Transformation Logic     :         dev2, after dev1, 14d
+    Load Procedures         :         dev3, after dev2, 7d
+    
+    section Testing
+    Unit Testing            :         test1, after dev1, 21d
+    Integration Testing     :         test2, after dev3, 7d
+    UAT                     :         test3, after test2, 5d
+    
+    section Deployment
+    Production Migration    :         dep1, after test3, 3d
+    Monitoring Setup        :         dep2, after dep1, 2d
+```" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Canvas Section -->
+        <section id="canvas" class="content-section">
+            <h2>Canvas Templates</h2>
+            
+            <div class="template-card">
+                <h3>Project Planning Canvas</h3>
+                <div class="preview">
+                    <pre># 🎯 Project Planning Canvas
+
+## 📋 Project Overview
+**Project Name:** [Your Project]
+**Duration:** [Timeline]
+**Team Size:** [Number]
+
+---
+
+## 🎯 Goals & Objectives
+### Primary Goals
+- [ ] Goal 1
+- [ ] Goal 2
+- [ ] Goal 3
+
+### Success Metrics
+- Metric 1: Target value
+- Metric 2: Target value
+- Metric 3: Target value
+
+---
+
+## 👥 Stakeholders
+| Role | Name | Responsibilities |
+|------|------|-----------------|
+| Product Owner | | Define requirements |
+| Tech Lead | | Technical decisions |
+| Data Engineer | | Implementation |
+
+---
+
+## 🛠️ Technical Stack
+```yaml
+frontend:
+  - React/Vue/Angular
+backend:
+  - Python/Node.js
+database:
+  - PostgreSQL/MongoDB
+infrastructure:
+  - AWS/GCP/Azure
+```
+
+---
+
+## 📅 Timeline & Milestones
+```mermaid
+gantt
+    title Project Timeline
+    dateFormat YYYY-MM-DD
+    section Phase 1
+    Planning          :a1, 2024-01-01, 7d
+    Design           :a2, after a1, 14d
+    section Phase 2
+    Development      :a3, after a2, 30d
+    Testing          :a4, after a3, 14d
+```
+
+---
+
+## ⚠️ Risks & Mitigations
+1. **Risk:** [Description]
+   - **Impact:** High/Medium/Low
+   - **Mitigation:** [Strategy]
+
+---
+
+## 📝 Notes & Resources
+- [[Meeting Notes]]
+- [[Technical Specs]]
+- [[Design Documents]]</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="# 🎯 Project Planning Canvas
+
+## 📋 Project Overview
+**Project Name:** [Your Project]
+**Duration:** [Timeline]
+**Team Size:** [Number]
+
+---
+
+## 🎯 Goals & Objectives
+### Primary Goals
+- [ ] Goal 1
+- [ ] Goal 2
+- [ ] Goal 3
+
+### Success Metrics
+- Metric 1: Target value
+- Metric 2: Target value
+- Metric 3: Target value
+
+---
+
+## 👥 Stakeholders
+| Role | Name | Responsibilities |
+|------|------|-----------------|
+| Product Owner | | Define requirements |
+| Tech Lead | | Technical decisions |
+| Data Engineer | | Implementation |
+
+---
+
+## 🛠️ Technical Stack
+```yaml
+frontend:
+  - React/Vue/Angular
+backend:
+  - Python/Node.js
+database:
+  - PostgreSQL/MongoDB
+infrastructure:
+  - AWS/GCP/Azure
+```
+
+---
+
+## 📅 Timeline & Milestones
+```mermaid
+gantt
+    title Project Timeline
+    dateFormat YYYY-MM-DD
+    section Phase 1
+    Planning          :a1, 2024-01-01, 7d
+    Design           :a2, after a1, 14d
+    section Phase 2
+    Development      :a3, after a2, 30d
+    Testing          :a4, after a3, 14d
+```
+
+---
+
+## ⚠️ Risks & Mitigations
+1. **Risk:** [Description]
+   - **Impact:** High/Medium/Low
+   - **Mitigation:** [Strategy]
+
+---
+
+## 📝 Notes & Resources
+- [[Meeting Notes]]
+- [[Technical Specs]]
+- [[Design Documents]]">📋 Copy</button>
+                    <button class="insert-btn" data-content="# 🎯 Project Planning Canvas
+
+## 📋 Project Overview
+**Project Name:** [Your Project]
+**Duration:** [Timeline]
+**Team Size:** [Number]
+
+---
+
+## 🎯 Goals & Objectives
+### Primary Goals
+- [ ] Goal 1
+- [ ] Goal 2
+- [ ] Goal 3
+
+### Success Metrics
+- Metric 1: Target value
+- Metric 2: Target value
+- Metric 3: Target value
+
+---
+
+## 👥 Stakeholders
+| Role | Name | Responsibilities |
+|------|------|-----------------|
+| Product Owner | | Define requirements |
+| Tech Lead | | Technical decisions |
+| Data Engineer | | Implementation |
+
+---
+
+## 🛠️ Technical Stack
+```yaml
+frontend:
+  - React/Vue/Angular
+backend:
+  - Python/Node.js
+database:
+  - PostgreSQL/MongoDB
+infrastructure:
+  - AWS/GCP/Azure
+```
+
+---
+
+## 📅 Timeline & Milestones
+```mermaid
+gantt
+    title Project Timeline
+    dateFormat YYYY-MM-DD
+    section Phase 1
+    Planning          :a1, 2024-01-01, 7d
+    Design           :a2, after a1, 14d
+    section Phase 2
+    Development      :a3, after a2, 30d
+    Testing          :a4, after a3, 14d
+```
+
+---
+
+## ⚠️ Risks & Mitigations
+1. **Risk:** [Description]
+   - **Impact:** High/Medium/Low
+   - **Mitigation:** [Strategy]
+
+---
+
+## 📝 Notes & Resources
+- [[Meeting Notes]]
+- [[Technical Specs]]
+- [[Design Documents]]" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Data Pipeline Canvas</h3>
+                <div class="preview">
+                    <pre># 🔄 Data Pipeline Canvas
+
+## 📊 Pipeline Overview
+**Name:** [[Pipeline Name]]
+**Type:** Batch / Streaming / Hybrid
+**Frequency:** Daily / Hourly / Real-time
+**Owner:** [[Team/Person]]
+
+---
+
+## 📥 Data Sources
+### Source 1: [[Database Name]]
+```sql
+SELECT * FROM schema.table
+WHERE date >= '${start_date}'
+```
+- **Connection:** `jdbc:postgresql://host:5432/db`
+- **Credentials:** Vault/Secret Manager
+- **Volume:** ~1M records/day
+
+### Source 2: [[API Name]]
+```yaml
+endpoint: https://api.example.com/data
+auth: OAuth2
+rate_limit: 1000/hour
+```
+
+---
+
+## 🔧 Transformations
+### Stage 1: Data Cleaning
+```python
+# Remove duplicates
+df = df.drop_duplicates(['id'])
+
+# Handle nulls
+df['amount'] = df['amount'].fillna(0)
+
+# Validate data types
+df['date'] = pd.to_datetime(df['date'])
+```
+
+### Stage 2: Enrichment
+- Join with reference data
+- Calculate derived fields
+- Apply business rules
+
+---
+
+## 📤 Data Destinations
+### Primary: Data Warehouse
+- **Table:** `analytics.fact_sales`
+- **Update Strategy:** Append/Merge
+- **Partitioning:** By date
+
+### Secondary: Real-time Dashboard
+- **System:** Kafka → Elasticsearch
+- **Index:** `sales-*`
+
+---
+
+## 🏷️ Data Quality Checks
+- [ ] Completeness: No critical nulls
+- [ ] Uniqueness: No duplicate keys
+- [ ] Timeliness: Data < 24h old
+- [ ] Accuracy: Amount > 0
+- [ ] Consistency: Foreign key integrity
+
+---
+
+## 📈 Monitoring & Alerts
+### Metrics
+- Records processed: [[Grafana Link]]
+- Processing time: [[Dashboard]]
+- Error rate: < 1%
+
+### Alerts
+- Pipeline failure → PagerDuty
+- Data quality issues → Slack
+- SLA breach → Email
+
+---
+
+## 🔗 Dependencies
+```mermaid
+graph LR
+    A[Source Data] --> B[This Pipeline]
+    B --> C[Downstream Pipeline 1]
+    B --> D[Downstream Pipeline 2]
+    B --> E[BI Reports]
+```
+
+---
+
+## 📝 Documentation
+- [[Pipeline Design Doc]]
+- [[Data Dictionary]]
+- [[Runbook]]</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="# 🔄 Data Pipeline Canvas
+
+## 📊 Pipeline Overview
+**Name:** [[Pipeline Name]]
+**Type:** Batch / Streaming / Hybrid
+**Frequency:** Daily / Hourly / Real-time
+**Owner:** [[Team/Person]]
+
+---
+
+## 📥 Data Sources
+### Source 1: [[Database Name]]
+```sql
+SELECT * FROM schema.table
+WHERE date >= '${start_date}'
+```
+- **Connection:** `jdbc:postgresql://host:5432/db`
+- **Credentials:** Vault/Secret Manager
+- **Volume:** ~1M records/day
+
+### Source 2: [[API Name]]
+```yaml
+endpoint: https://api.example.com/data
+auth: OAuth2
+rate_limit: 1000/hour
+```
+
+---
+
+## 🔧 Transformations
+### Stage 1: Data Cleaning
+```python
+# Remove duplicates
+df = df.drop_duplicates(['id'])
+
+# Handle nulls
+df['amount'] = df['amount'].fillna(0)
+
+# Validate data types
+df['date'] = pd.to_datetime(df['date'])
+```
+
+### Stage 2: Enrichment
+- Join with reference data
+- Calculate derived fields
+- Apply business rules
+
+---
+
+## 📤 Data Destinations
+### Primary: Data Warehouse
+- **Table:** `analytics.fact_sales`
+- **Update Strategy:** Append/Merge
+- **Partitioning:** By date
+
+### Secondary: Real-time Dashboard
+- **System:** Kafka → Elasticsearch
+- **Index:** `sales-*`
+
+---
+
+## 🏷️ Data Quality Checks
+- [ ] Completeness: No critical nulls
+- [ ] Uniqueness: No duplicate keys
+- [ ] Timeliness: Data < 24h old
+- [ ] Accuracy: Amount > 0
+- [ ] Consistency: Foreign key integrity
+
+---
+
+## 📈 Monitoring & Alerts
+### Metrics
+- Records processed: [[Grafana Link]]
+- Processing time: [[Dashboard]]
+- Error rate: < 1%
+
+### Alerts
+- Pipeline failure → PagerDuty
+- Data quality issues → Slack
+- SLA breach → Email
+
+---
+
+## 🔗 Dependencies
+```mermaid
+graph LR
+    A[Source Data] --> B[This Pipeline]
+    B --> C[Downstream Pipeline 1]
+    B --> D[Downstream Pipeline 2]
+    B --> E[BI Reports]
+```
+
+---
+
+## 📝 Documentation
+- [[Pipeline Design Doc]]
+- [[Data Dictionary]]
+- [[Runbook]]">📋 Copy</button>
+                    <button class="insert-btn" data-content="# 🔄 Data Pipeline Canvas
+
+## 📊 Pipeline Overview
+**Name:** [[Pipeline Name]]
+**Type:** Batch / Streaming / Hybrid
+**Frequency:** Daily / Hourly / Real-time
+**Owner:** [[Team/Person]]
+
+---
+
+## 📥 Data Sources
+### Source 1: [[Database Name]]
+```sql
+SELECT * FROM schema.table
+WHERE date >= '${start_date}'
+```
+- **Connection:** `jdbc:postgresql://host:5432/db`
+- **Credentials:** Vault/Secret Manager
+- **Volume:** ~1M records/day
+
+### Source 2: [[API Name]]
+```yaml
+endpoint: https://api.example.com/data
+auth: OAuth2
+rate_limit: 1000/hour
+```
+
+---
+
+## 🔧 Transformations
+### Stage 1: Data Cleaning
+```python
+# Remove duplicates
+df = df.drop_duplicates(['id'])
+
+# Handle nulls
+df['amount'] = df['amount'].fillna(0)
+
+# Validate data types
+df['date'] = pd.to_datetime(df['date'])
+```
+
+### Stage 2: Enrichment
+- Join with reference data
+- Calculate derived fields
+- Apply business rules
+
+---
+
+## 📤 Data Destinations
+### Primary: Data Warehouse
+- **Table:** `analytics.fact_sales`
+- **Update Strategy:** Append/Merge
+- **Partitioning:** By date
+
+### Secondary: Real-time Dashboard
+- **System:** Kafka → Elasticsearch
+- **Index:** `sales-*`
+
+---
+
+## 🏷️ Data Quality Checks
+- [ ] Completeness: No critical nulls
+- [ ] Uniqueness: No duplicate keys
+- [ ] Timeliness: Data < 24h old
+- [ ] Accuracy: Amount > 0
+- [ ] Consistency: Foreign key integrity
+
+---
+
+## 📈 Monitoring & Alerts
+### Metrics
+- Records processed: [[Grafana Link]]
+- Processing time: [[Dashboard]]
+- Error rate: < 1%
+
+### Alerts
+- Pipeline failure → PagerDuty
+- Data quality issues → Slack
+- SLA breach → Email
+
+---
+
+## 🔗 Dependencies
+```mermaid
+graph LR
+    A[Source Data] --> B[This Pipeline]
+    B --> C[Downstream Pipeline 1]
+    B --> D[Downstream Pipeline 2]
+    B --> E[BI Reports]
+```
+
+---
+
+## 📝 Documentation
+- [[Pipeline Design Doc]]
+- [[Data Dictionary]]
+- [[Runbook]]" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>System Architecture Canvas</h3>
+                <div class="preview">
+                    <pre># 🏛️ System Architecture Canvas
+
+## 🎯 System Overview
+**System Name:** [[System Name]]
+**Purpose:** Brief description
+**Users:** Internal / External / Both
+**Scale:** Users/Requests per day
+
+---
+
+## 🔧 Components
+
+### Frontend Layer
+```yaml
+Web App:
+  Technology: React + TypeScript
+  Hosting: CloudFront + S3
+  Auth: OAuth2 / SAML
+
+Mobile App:
+  Platform: iOS / Android
+  Framework: React Native
+  API: GraphQL
+```
+
+### API Layer
+```yaml
+Gateway:
+  Service: API Gateway / Kong
+  Rate Limiting: 1000 req/min
+  Authentication: JWT
+
+Services:
+  - User Service: Node.js
+  - Order Service: Python
+  - Analytics Service: Go
+```
+
+### Data Layer
+```yaml
+Primary DB:
+  Type: PostgreSQL
+  Size: 500GB
+  Replication: Master-Slave
+
+Cache:
+  Type: Redis
+  TTL: 3600s
+  Size: 16GB
+
+Search:
+  Type: Elasticsearch
+  Indices: products, users
+```
+
+---
+
+## 🔐 Security Architecture
+
+### Network Security
+- VPC with private/public subnets
+- WAF rules for common attacks
+- DDoS protection
+
+### Application Security
+- Input validation
+- SQL injection prevention
+- XSS protection
+- CSRF tokens
+
+### Data Security
+- Encryption at rest (AES-256)
+- Encryption in transit (TLS 1.3)
+- Key rotation policy
+
+---
+
+## 📊 Data Flow
+```mermaid
+sequenceDiagram
+    participant User
+    participant CDN
+    participant LB as Load Balancer
+    participant API
+    participant Cache
+    participant DB
+    
+    User->>CDN: Request
+    CDN->>LB: Forward request
+    LB->>API: Route to service
+    API->>Cache: Check cache
+    alt Cache Hit
+        Cache-->>API: Return data
+    else Cache Miss
+        API->>DB: Query
+        DB-->>API: Return data
+        API->>Cache: Update cache
+    end
+    API-->>User: Response
+```
+
+---
+
+## 🚀 Deployment Architecture
+
+### Environments
+- **Development:** Single instance
+- **Staging:** Scaled down prod replica
+- **Production:** Full HA setup
+
+### Infrastructure as Code
+```hcl
+# Terraform example
+resource "aws_ecs_service" "api" {
+  name            = "api-service"
+  cluster         = aws_ecs_cluster.main.id
+  task_definition = aws_ecs_task_definition.api.arn
+  desired_count   = 3
+  
+  load_balancer {
+    target_group_arn = aws_lb_target_group.api.arn
+    container_name   = "api"
+    container_port   = 8080
+  }
+}
+```
+
+---
+
+## 📈 Monitoring & Observability
+
+### Metrics
+- APM: DataDog / New Relic
+- Logs: ELK Stack / Splunk
+- Traces: Jaeger / X-Ray
+
+### Key Metrics
+- Response time: p95 < 200ms
+- Error rate: < 0.1%
+- Availability: 99.9%
+
+### Dashboards
+- [[System Health Dashboard]]
+- [[Business Metrics Dashboard]]
+- [[Cost Dashboard]]
+
+---
+
+## 🔄 Disaster Recovery
+
+### Backup Strategy
+- Database: Daily snapshots
+- Files: S3 versioning
+- Config: Git repository
+
+### RTO/RPO
+- RTO: 4 hours
+- RPO: 1 hour
+
+---
+
+## 📋 Related Documents
+- [[API Documentation]]
+- [[Deployment Guide]]
+- [[Incident Response Plan]]
+- [[Architecture Decision Records]]</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="# 🏛️ System Architecture Canvas
+
+## 🎯 System Overview
+**System Name:** [[System Name]]
+**Purpose:** Brief description
+**Users:** Internal / External / Both
+**Scale:** Users/Requests per day
+
+---
+
+## 🔧 Components
+
+### Frontend Layer
+```yaml
+Web App:
+  Technology: React + TypeScript
+  Hosting: CloudFront + S3
+  Auth: OAuth2 / SAML
+
+Mobile App:
+  Platform: iOS / Android
+  Framework: React Native
+  API: GraphQL
+```
+
+### API Layer
+```yaml
+Gateway:
+  Service: API Gateway / Kong
+  Rate Limiting: 1000 req/min
+  Authentication: JWT
+
+Services:
+  - User Service: Node.js
+  - Order Service: Python
+  - Analytics Service: Go
+```
+
+### Data Layer
+```yaml
+Primary DB:
+  Type: PostgreSQL
+  Size: 500GB
+  Replication: Master-Slave
+
+Cache:
+  Type: Redis
+  TTL: 3600s
+  Size: 16GB
+
+Search:
+  Type: Elasticsearch
+  Indices: products, users
+```
+
+---
+
+## 🔐 Security Architecture
+
+### Network Security
+- VPC with private/public subnets
+- WAF rules for common attacks
+- DDoS protection
+
+### Application Security
+- Input validation
+- SQL injection prevention
+- XSS protection
+- CSRF tokens
+
+### Data Security
+- Encryption at rest (AES-256)
+- Encryption in transit (TLS 1.3)
+- Key rotation policy
+
+---
+
+## 📊 Data Flow
+```mermaid
+sequenceDiagram
+    participant User
+    participant CDN
+    participant LB as Load Balancer
+    participant API
+    participant Cache
+    participant DB
+    
+    User->>CDN: Request
+    CDN->>LB: Forward request
+    LB->>API: Route to service
+    API->>Cache: Check cache
+    alt Cache Hit
+        Cache-->>API: Return data
+    else Cache Miss
+        API->>DB: Query
+        DB-->>API: Return data
+        API->>Cache: Update cache
+    end
+    API-->>User: Response
+```
+
+---
+
+## 🚀 Deployment Architecture
+
+### Environments
+- **Development:** Single instance
+- **Staging:** Scaled down prod replica
+- **Production:** Full HA setup
+
+### Infrastructure as Code
+```hcl
+# Terraform example
+resource &quot;aws_ecs_service&quot; &quot;api&quot; {
+  name            = &quot;api-service&quot;
+  cluster         = aws_ecs_cluster.main.id
+  task_definition = aws_ecs_task_definition.api.arn
+  desired_count   = 3
+  
+  load_balancer {
+    target_group_arn = aws_lb_target_group.api.arn
+    container_name   = &quot;api&quot;
+    container_port   = 8080
+  }
+}
+```
+
+---
+
+## 📈 Monitoring & Observability
+
+### Metrics
+- APM: DataDog / New Relic
+- Logs: ELK Stack / Splunk
+- Traces: Jaeger / X-Ray
+
+### Key Metrics
+- Response time: p95 < 200ms
+- Error rate: < 0.1%
+- Availability: 99.9%
+
+### Dashboards
+- [[System Health Dashboard]]
+- [[Business Metrics Dashboard]]
+- [[Cost Dashboard]]
+
+---
+
+## 🔄 Disaster Recovery
+
+### Backup Strategy
+- Database: Daily snapshots
+- Files: S3 versioning
+- Config: Git repository
+
+### RTO/RPO
+- RTO: 4 hours
+- RPO: 1 hour
+
+---
+
+## 📋 Related Documents
+- [[API Documentation]]
+- [[Deployment Guide]]
+- [[Incident Response Plan]]
+- [[Architecture Decision Records]]">📋 Copy</button>
+                    <button class="insert-btn" data-content="# 🏛️ System Architecture Canvas
+
+## 🎯 System Overview
+**System Name:** [[System Name]]
+**Purpose:** Brief description
+**Users:** Internal / External / Both
+**Scale:** Users/Requests per day
+
+---
+
+## 🔧 Components
+
+### Frontend Layer
+```yaml
+Web App:
+  Technology: React + TypeScript
+  Hosting: CloudFront + S3
+  Auth: OAuth2 / SAML
+
+Mobile App:
+  Platform: iOS / Android
+  Framework: React Native
+  API: GraphQL
+```
+
+### API Layer
+```yaml
+Gateway:
+  Service: API Gateway / Kong
+  Rate Limiting: 1000 req/min
+  Authentication: JWT
+
+Services:
+  - User Service: Node.js
+  - Order Service: Python
+  - Analytics Service: Go
+```
+
+### Data Layer
+```yaml
+Primary DB:
+  Type: PostgreSQL
+  Size: 500GB
+  Replication: Master-Slave
+
+Cache:
+  Type: Redis
+  TTL: 3600s
+  Size: 16GB
+
+Search:
+  Type: Elasticsearch
+  Indices: products, users
+```
+
+---
+
+## 🔐 Security Architecture
+
+### Network Security
+- VPC with private/public subnets
+- WAF rules for common attacks
+- DDoS protection
+
+### Application Security
+- Input validation
+- SQL injection prevention
+- XSS protection
+- CSRF tokens
+
+### Data Security
+- Encryption at rest (AES-256)
+- Encryption in transit (TLS 1.3)
+- Key rotation policy
+
+---
+
+## 📊 Data Flow
+```mermaid
+sequenceDiagram
+    participant User
+    participant CDN
+    participant LB as Load Balancer
+    participant API
+    participant Cache
+    participant DB
+    
+    User->>CDN: Request
+    CDN->>LB: Forward request
+    LB->>API: Route to service
+    API->>Cache: Check cache
+    alt Cache Hit
+        Cache-->>API: Return data
+    else Cache Miss
+        API->>DB: Query
+        DB-->>API: Return data
+        API->>Cache: Update cache
+    end
+    API-->>User: Response
+```
+
+---
+
+## 🚀 Deployment Architecture
+
+### Environments
+- **Development:** Single instance
+- **Staging:** Scaled down prod replica
+- **Production:** Full HA setup
+
+### Infrastructure as Code
+```hcl
+# Terraform example
+resource &quot;aws_ecs_service&quot; &quot;api&quot; {
+  name            = &quot;api-service&quot;
+  cluster         = aws_ecs_cluster.main.id
+  task_definition = aws_ecs_task_definition.api.arn
+  desired_count   = 3
+  
+  load_balancer {
+    target_group_arn = aws_lb_target_group.api.arn
+    container_name   = &quot;api&quot;
+    container_port   = 8080
+  }
+}
+```
+
+---
+
+## 📈 Monitoring & Observability
+
+### Metrics
+- APM: DataDog / New Relic
+- Logs: ELK Stack / Splunk
+- Traces: Jaeger / X-Ray
+
+### Key Metrics
+- Response time: p95 < 200ms
+- Error rate: < 0.1%
+- Availability: 99.9%
+
+### Dashboards
+- [[System Health Dashboard]]
+- [[Business Metrics Dashboard]]
+- [[Cost Dashboard]]
+
+---
+
+## 🔄 Disaster Recovery
+
+### Backup Strategy
+- Database: Daily snapshots
+- Files: S3 versioning
+- Config: Git repository
+
+### RTO/RPO
+- RTO: 4 hours
+- RPO: 1 hour
+
+---
+
+## 📋 Related Documents
+- [[API Documentation]]
+- [[Deployment Guide]]
+- [[Incident Response Plan]]
+- [[Architecture Decision Records]]" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <h3>Knowledge Graph Canvas</h3>
+                <div class="preview">
+                    <pre># 🧠 Knowledge Graph Canvas
+
+## 🌐 Graph Overview
+Create a visual knowledge graph in Obsidian Canvas with these connected nodes:
+
+---
+
+## 📦 Core Concepts (Central Nodes)
+
+### 1. [[Data Engineering]]
+**Description:** The practice of designing and building systems for collecting, storing, and analyzing data at scale.
+
+**Key Components:**
+- Data Ingestion
+- Data Storage
+- Data Processing
+- Data Quality
+- Data Governance
+
+**Links to:**
+- [[ETL/ELT Processes]]
+- [[Data Warehousing]]
+- [[Big Data Technologies]]
+- [[Cloud Platforms]]
+
+---
+
+### 2. [[Data Architecture]]
+**Description:** The overall structure of data and data-related resources as an integral part of the enterprise architecture.
+
+**Key Aspects:**
+- Data Models
+- Data Flow
+- Integration Patterns
+- Security Architecture
+- Scalability Design
+
+**Links to:**
+- [[Microservices]]
+- [[Event-Driven Architecture]]
+- [[Data Mesh]]
+- [[Lambda Architecture]]
+
+---
+
+## 🔗 Connection Patterns
+
+### Technology Stack Connections
+```
+[Python] ←→ [Pandas] ←→ [Data Processing]
+    ↓          ↓              ↓
+[PySpark] ←→ [Spark] ←→ [Distributed Computing]
+    ↓          ↓              ↓
+[Airflow] ←→ [Orchestration] ←→ [Pipeline Management]
+```
+
+### Data Flow Connections
+```
+[Source Systems] → [Ingestion Layer] → [Raw Data Lake]
+                            ↓
+                    [Processing Layer]
+                            ↓
+                    [Curated Data Layer]
+                            ↓
+                    [Serving Layer] → [End Users]
+```
+
+---
+
+## 🎨 Canvas Layout Suggestions
+
+### Hierarchical Layout
+```
+Level 1: Business Objectives
+    ├── Level 2: Capabilities
+    │   ├── Level 3: Technologies
+    │   └── Level 3: Processes
+    └── Level 2: Governance
+        ├── Level 3: Policies
+        └── Level 3: Standards
+```
+
+### Domain-Based Layout
+```
+┌─────────────┐  ┌─────────────┐  ┌─────────────┐
+│   Domain A  │  │   Domain B  │  │   Domain C  │
+│  ┌───┐      │  │  ┌───┐      │  │  ┌───┐      │
+│  │API│◄─────┼──┼─►│API│◄─────┼──┼─►│API│      │
+│  └───┘      │  │  └───┘      │  │  └───┘      │
+│      ▼      │  │      ▼      │  │      ▼      │
+│  ┌─────┐    │  │  ┌─────┐    │  │  ┌─────┐    │
+│  │ DB  │    │  │  │ DB  │    │  │  │ DB  │    │
+│  └─────┘    │  │  └─────┘    │  │  └─────┘    │
+└─────────────┘  └─────────────┘  └─────────────┘
+```
+
+---
+
+## 🏷️ Node Templates
+
+### Technology Node
+```markdown
+# 🔧 [Technology Name]
+
+**Type:** Database / Framework / Tool
+**Version:** X.Y.Z
+**License:** Open Source / Commercial
+
+## Use Cases
+- Use case 1
+- Use case 2
+
+## Pros
+- ✅ Advantage 1
+- ✅ Advantage 2
+
+## Cons
+- ❌ Limitation 1
+- ❌ Limitation 2
+
+## Related
+- [[Alternative Tech]]
+- [[Complementary Tech]]
+```
+
+### Process Node
+```markdown
+# 📋 [Process Name]
+
+**Frequency:** Daily / Weekly / Monthly
+**Owner:** [[Team/Role]]
+**SLA:** X hours
+
+## Steps
+1. Step 1
+2. Step 2
+3. Step 3
+
+## Inputs
+- [[Input Source 1]]
+- [[Input Source 2]]
+
+## Outputs
+- [[Output Target 1]]
+- [[Output Target 2]]
+
+## Dependencies
+- [[Upstream Process]]
+- [[Required System]]
+```
+
+---
+
+## 🎯 Best Practices for Canvas
+
+1. **Color Coding**
+   - 🟦 Blue: Data Sources
+   - 🟩 Green: Processing
+   - 🟨 Yellow: Storage
+   - 🟥 Red: Issues/Blockers
+
+2. **Size Hierarchy**
+   - Large: Core concepts
+   - Medium: Sub-concepts
+   - Small: Details/Examples
+
+3. **Connection Types**
+   - Solid line: Direct dependency
+   - Dashed line: Indirect relation
+   - Arrow: Data flow direction
+
+4. **Grouping**
+   - Use frames to group related nodes
+   - Label groups clearly
+   - Maintain consistent spacing
+
+---
+
+## 📚 Resources
+- [[Canvas Best Practices]]
+- [[Visual Thinking]]
+- [[Knowledge Management]]</pre>
+                </div>
+                <div class="button-group">
+                    <button class="copy-btn" data-content="# 🧠 Knowledge Graph Canvas
+
+## 🌐 Graph Overview
+Create a visual knowledge graph in Obsidian Canvas with these connected nodes:
+
+---
+
+## 📦 Core Concepts (Central Nodes)
+
+### 1. [[Data Engineering]]
+**Description:** The practice of designing and building systems for collecting, storing, and analyzing data at scale.
+
+**Key Components:**
+- Data Ingestion
+- Data Storage
+- Data Processing
+- Data Quality
+- Data Governance
+
+**Links to:**
+- [[ETL/ELT Processes]]
+- [[Data Warehousing]]
+- [[Big Data Technologies]]
+- [[Cloud Platforms]]
+
+---
+
+### 2. [[Data Architecture]]
+**Description:** The overall structure of data and data-related resources as an integral part of the enterprise architecture.
+
+**Key Aspects:**
+- Data Models
+- Data Flow
+- Integration Patterns
+- Security Architecture
+- Scalability Design
+
+**Links to:**
+- [[Microservices]]
+- [[Event-Driven Architecture]]
+- [[Data Mesh]]
+- [[Lambda Architecture]]
+
+---
+
+## 🔗 Connection Patterns
+
+### Technology Stack Connections
+```
+[Python] ←→ [Pandas] ←→ [Data Processing]
+    ↓          ↓              ↓
+[PySpark] ←→ [Spark] ←→ [Distributed Computing]
+    ↓          ↓              ↓
+[Airflow] ←→ [Orchestration] ←→ [Pipeline Management]
+```
+
+### Data Flow Connections
+```
+[Source Systems] → [Ingestion Layer] → [Raw Data Lake]
+                            ↓
+                    [Processing Layer]
+                            ↓
+                    [Curated Data Layer]
+                            ↓
+                    [Serving Layer] → [End Users]
+```
+
+---
+
+## 🎨 Canvas Layout Suggestions
+
+### Hierarchical Layout
+```
+Level 1: Business Objectives
+    ├── Level 2: Capabilities
+    │   ├── Level 3: Technologies
+    │   └── Level 3: Processes
+    └── Level 2: Governance
+        ├── Level 3: Policies
+        └── Level 3: Standards
+```
+
+### Domain-Based Layout
+```
+┌─────────────┐  ┌─────────────┐  ┌─────────────┐
+│   Domain A  │  │   Domain B  │  │   Domain C  │
+│  ┌───┐      │  │  ┌───┐      │  │  ┌───┐      │
+│  │API│◄─────┼──┼─►│API│◄─────┼──┼─►│API│      │
+│  └───┘      │  │  └───┘      │  │  └───┘      │
+│      ▼      │  │      ▼      │  │      ▼      │
+│  ┌─────┐    │  │  ┌─────┐    │  │  ┌─────┐    │
+│  │ DB  │    │  │  │ DB  │    │  │  │ DB  │    │
+│  └─────┘    │  │  └─────┘    │  │  └─────┘    │
+└─────────────┘  └─────────────┘  └─────────────┘
+```
+
+---
+
+## 🏷️ Node Templates
+
+### Technology Node
+```markdown
+# 🔧 [Technology Name]
+
+**Type:** Database / Framework / Tool
+**Version:** X.Y.Z
+**License:** Open Source / Commercial
+
+## Use Cases
+- Use case 1
+- Use case 2
+
+## Pros
+- ✅ Advantage 1
+- ✅ Advantage 2
+
+## Cons
+- ❌ Limitation 1
+- ❌ Limitation 2
+
+## Related
+- [[Alternative Tech]]
+- [[Complementary Tech]]
+```
+
+### Process Node
+```markdown
+# 📋 [Process Name]
+
+**Frequency:** Daily / Weekly / Monthly
+**Owner:** [[Team/Role]]
+**SLA:** X hours
+
+## Steps
+1. Step 1
+2. Step 2
+3. Step 3
+
+## Inputs
+- [[Input Source 1]]
+- [[Input Source 2]]
+
+## Outputs
+- [[Output Target 1]]
+- [[Output Target 2]]
+
+## Dependencies
+- [[Upstream Process]]
+- [[Required System]]
+```
+
+---
+
+## 🎯 Best Practices for Canvas
+
+1. **Color Coding**
+   - 🟦 Blue: Data Sources
+   - 🟩 Green: Processing
+   - 🟨 Yellow: Storage
+   - 🟥 Red: Issues/Blockers
+
+2. **Size Hierarchy**
+   - Large: Core concepts
+   - Medium: Sub-concepts
+   - Small: Details/Examples
+
+3. **Connection Types**
+   - Solid line: Direct dependency
+   - Dashed line: Indirect relation
+   - Arrow: Data flow direction
+
+4. **Grouping**
+   - Use frames to group related nodes
+   - Label groups clearly
+   - Maintain consistent spacing
+
+---
+
+## 📚 Resources
+- [[Canvas Best Practices]]
+- [[Visual Thinking]]
+- [[Knowledge Management]]">📋 Copy</button>
+                    <button class="insert-btn" data-content="# 🧠 Knowledge Graph Canvas
+
+## 🌐 Graph Overview
+Create a visual knowledge graph in Obsidian Canvas with these connected nodes:
+
+---
+
+## 📦 Core Concepts (Central Nodes)
+
+### 1. [[Data Engineering]]
+**Description:** The practice of designing and building systems for collecting, storing, and analyzing data at scale.
+
+**Key Components:**
+- Data Ingestion
+- Data Storage
+- Data Processing
+- Data Quality
+- Data Governance
+
+**Links to:**
+- [[ETL/ELT Processes]]
+- [[Data Warehousing]]
+- [[Big Data Technologies]]
+- [[Cloud Platforms]]
+
+---
+
+### 2. [[Data Architecture]]
+**Description:** The overall structure of data and data-related resources as an integral part of the enterprise architecture.
+
+**Key Aspects:**
+- Data Models
+- Data Flow
+- Integration Patterns
+- Security Architecture
+- Scalability Design
+
+**Links to:**
+- [[Microservices]]
+- [[Event-Driven Architecture]]
+- [[Data Mesh]]
+- [[Lambda Architecture]]
+
+---
+
+## 🔗 Connection Patterns
+
+### Technology Stack Connections
+```
+[Python] ←→ [Pandas] ←→ [Data Processing]
+    ↓          ↓              ↓
+[PySpark] ←→ [Spark] ←→ [Distributed Computing]
+    ↓          ↓              ↓
+[Airflow] ←→ [Orchestration] ←→ [Pipeline Management]
+```
+
+### Data Flow Connections
+```
+[Source Systems] → [Ingestion Layer] → [Raw Data Lake]
+                            ↓
+                    [Processing Layer]
+                            ↓
+                    [Curated Data Layer]
+                            ↓
+                    [Serving Layer] → [End Users]
+```
+
+---
+
+## 🎨 Canvas Layout Suggestions
+
+### Hierarchical Layout
+```
+Level 1: Business Objectives
+    ├── Level 2: Capabilities
+    │   ├── Level 3: Technologies
+    │   └── Level 3: Processes
+    └── Level 2: Governance
+        ├── Level 3: Policies
+        └── Level 3: Standards
+```
+
+### Domain-Based Layout
+```
+┌─────────────┐  ┌─────────────┐  ┌─────────────┐
+│   Domain A  │  │   Domain B  │  │   Domain C  │
+│  ┌───┐      │  │  ┌───┐      │  │  ┌───┐      │
+│  │API│◄─────┼──┼─►│API│◄─────┼──┼─►│API│      │
+│  └───┘      │  │  └───┘      │  │  └───┘      │
+│      ▼      │  │      ▼      │  │      ▼      │
+│  ┌─────┐    │  │  ┌─────┐    │  │  ┌─────┐    │
+│  │ DB  │    │  │  │ DB  │    │  │  │ DB  │    │
+│  └─────┘    │  │  └─────┘    │  │  └─────┘    │
+└─────────────┘  └─────────────┘  └─────────────┘
+```
+
+---
+
+## 🏷️ Node Templates
+
+### Technology Node
+```markdown
+# 🔧 [Technology Name]
+
+**Type:** Database / Framework / Tool
+**Version:** X.Y.Z
+**License:** Open Source / Commercial
+
+## Use Cases
+- Use case 1
+- Use case 2
+
+## Pros
+- ✅ Advantage 1
+- ✅ Advantage 2
+
+## Cons
+- ❌ Limitation 1
+- ❌ Limitation 2
+
+## Related
+- [[Alternative Tech]]
+- [[Complementary Tech]]
+```
+
+### Process Node
+```markdown
+# 📋 [Process Name]
+
+**Frequency:** Daily / Weekly / Monthly
+**Owner:** [[Team/Role]]
+**SLA:** X hours
+
+## Steps
+1. Step 1
+2. Step 2
+3. Step 3
+
+## Inputs
+- [[Input Source 1]]
+- [[Input Source 2]]
+
+## Outputs
+- [[Output Target 1]]
+- [[Output Target 2]]
+
+## Dependencies
+- [[Upstream Process]]
+- [[Required System]]
+```
+
+---
+
+## 🎯 Best Practices for Canvas
+
+1. **Color Coding**
+   - 🟦 Blue: Data Sources
+   - 🟩 Green: Processing
+   - 🟨 Yellow: Storage
+   - 🟥 Red: Issues/Blockers
+
+2. **Size Hierarchy**
+   - Large: Core concepts
+   - Medium: Sub-concepts
+   - Small: Details/Examples
+
+3. **Connection Types**
+   - Solid line: Direct dependency
+   - Dashed line: Indirect relation
+   - Arrow: Data flow direction
+
+4. **Grouping**
+   - Use frames to group related nodes
+   - Label groups clearly
+   - Maintain consistent spacing
+
+---
+
+## 📚 Resources
+- [[Canvas Best Practices]]
+- [[Visual Thinking]]
+- [[Knowledge Management]]" data-title="Basic Todo List">🚀 Insert to Obsidian</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- JSON Formatter Section -->
+        <section id="json" class="content-section">
+            <h2>JSON Formatter</h2>
+            
+            <div class="json-formatter-container">
+                <div class="formatter-input">
+                    <h3>Paste Your JSON</h3>
+                    <textarea id="json-input" placeholder='{"name": "example", "value": 123}'></textarea>
+                    <div class="formatter-controls">
+                        <button id="format-json" class="format-btn">🎨 Format JSON</button>
+                        <button id="clear-json" class="clear-btn">🗑️ Clear</button>
+                        <select id="json-style" class="style-select">
+                            <option value="pretty">Pretty Print</option>
+                            <option value="compact">Compact</option>
+                            <option value="markdown">Markdown Code Block</option>
+                            <option value="table">Simple Table</option>
+                            <option value="nested-tables">Nested Tables</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="formatter-output">
+                    <h3>Formatted Output</h3>
+                    <div id="json-output" class="preview"></div>
+                    <div class="button-group" id="json-buttons" style="display: none;">
+                        <button class="copy-btn" id="copy-json">📋 Copy</button>
+                        <button class="insert-btn" id="insert-json">🚀 Insert to Obsidian</button>
+                    </div>
+                </div>
+                
+                <div class="json-examples">
+                    <h3>Example Use Cases</h3>
+                    <div class="example-grid">
+                        <div class="example-card">
+                            <h4>API Response</h4>
+                            <button class="example-btn" data-example='{"status": "success", "data": {"user": {"id": 123, "name": "John Doe", "email": "john@example.com"}, "timestamp": "2024-01-06T10:30:00Z"}}'>Load Example</button>
+                        </div>
+                        <div class="example-card">
+                            <h4>Configuration</h4>
+                            <button class="example-btn" data-example='{"database": {"host": "localhost", "port": 5432, "name": "myapp_db", "credentials": {"username": "admin", "password": "***"}}, "cache": {"enabled": true, "ttl": 3600}}'>Load Example</button>
+                        </div>
+                        <div class="example-card">
+                            <h4>Data Pipeline</h4>
+                            <button class="example-btn" data-example='{"pipeline": {"name": "sales_etl", "schedule": "0 2 * * *", "stages": [{"name": "extract", "source": "postgresql"}, {"name": "transform", "operations": ["clean", "aggregate"]}, {"name": "load", "destination": "warehouse"}]}}'>Load Example</button>
+                        </div>
+                        <div class="example-card">
+                            <h4>Schema Definition</h4>
+                            <button class="example-btn" data-example='{"table": "users", "columns": [{"name": "id", "type": "uuid", "primary": true}, {"name": "email", "type": "varchar", "unique": true}, {"name": "created_at", "type": "timestamp", "default": "now()"}]}'>Load Example</button>
+                        </div>
+                        <div class="example-card">
+                            <h4>Complex Nested Data</h4>
+                            <button class="example-btn" data-example='{"company": {"name": "Tech Corp", "founded": 2010, "employees": [{"id": 1, "name": "Alice", "department": {"name": "Engineering", "budget": 500000}, "skills": ["Python", "JavaScript"]}, {"id": 2, "name": "Bob", "department": {"name": "Sales", "budget": 300000}, "skills": ["Communication", "CRM"]}], "locations": [{"city": "New York", "country": "USA", "offices": [{"floor": 5, "capacity": 50}, {"floor": 6, "capacity": 30}]}, {"city": "London", "country": "UK", "offices": [{"floor": 2, "capacity": 40}]}]}}'>Load Example</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DBDiagram Parser Section -->
+        <section id="dbdiagram" class="content-section">
+            <h2>DBDiagram.io Parser</h2>
+            
+            <div class="dbdiagram-container">
+                <div class="formatter-input">
+                    <h3>Paste DBDiagram Table Definition</h3>
+                    <textarea id="dbdiagram-input" placeholder="Table FACT_ORDER_JOURNEY [headercolor:#011B4E] {
+  order_id bigint [pk, increment]
+  customer_key string
+  /* Timestamps */
+  order_timestamp_utc timestamp
+  ...
+}"></textarea>
+                    <div class="formatter-controls">
+                        <button id="parse-dbdiagram" class="format-btn">📊 Parse to Table</button>
+                        <button id="clear-dbdiagram" class="clear-btn">🗑️ Clear</button>
+                        <select id="dbdiagram-style" class="style-select">
+                            <option value="full">Full Documentation Table</option>
+                            <option value="simple">Simple Table</option>
+                            <option value="data-dictionary">Data Dictionary Format</option>
+                            <option value="diagram">Visual Diagram (SVG)</option>
+                            <option value="mermaid">Mermaid Diagram</option>
+                            <option value="visual-table">Visual Table (Markdown)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="formatter-output">
+                    <h3>Documentation Table</h3>
+                    <div id="dbdiagram-output" class="preview"></div>
+                    <div class="button-group" id="dbdiagram-buttons" style="display: none;">
+                        <button class="copy-btn" id="copy-dbdiagram">📋 Copy</button>
+                        <button class="insert-btn" id="insert-dbdiagram">🚀 Insert to Obsidian</button>
+                    </div>
+                </div>
+                
+                <div class="dbdiagram-examples">
+                    <h3>Features & Examples</h3>
+                    <div class="example-grid">
+                        <div class="example-card">
+                            <h4>Fact Table</h4>
+                            <button class="example-btn dbdiagram-example" data-example='Table FACT_SALES {
+  sale_id bigint [pk, increment]
+  /* Dimensions */
+  customer_key int [ref: > DIM_CUSTOMER.customer_key]
+  product_key int [ref: > DIM_PRODUCT.product_key]
+  date_key int [ref: > DIM_DATE.date_key]
+  
+  /* Measures */
+  quantity int [not null]
+  unit_price decimal(10,2)
+  total_amount decimal(10,2)
+  
+  /* Metadata */
+  created_at timestamp [default: `now()`]
+  updated_at timestamp
+}'>Load Example</button>
+                        </div>
+                        <div class="example-card">
+                            <h4>Dimension Table</h4>
+                            <button class="example-btn dbdiagram-example" data-example='Table DIM_CUSTOMER [headercolor: #E66100] {
+  customer_key int [pk, increment]
+  customer_id varchar(50) [unique, not null]
+  
+  /* Attributes */
+  first_name varchar(100)
+  last_name varchar(100)
+  email varchar(255) [unique]
+  phone varchar(20)
+  
+  /* Demographics */
+  birth_date date
+  gender varchar(10)
+  
+  /* SCD Type 2 */
+  effective_from date [not null]
+  effective_to date
+  is_current boolean [default: true]
+}'>Load Example</button>
+                        </div>
+                        <div class="example-card">
+                            <h4>Bridge Table</h4>
+                            <button class="example-btn dbdiagram-example" data-example='Table BRIDGE_ORDER_PRODUCT {
+  order_id bigint [ref: > FACT_ORDER.order_id]
+  product_id int [ref: > DIM_PRODUCT.product_id]
+  
+  /* Attributes */
+  quantity int [not null]
+  unit_price decimal(10,2)
+  discount_percent decimal(5,2) [default: 0]
+  
+  indexes {
+    (order_id, product_id) [pk]
+  }
+}'>Load Example</button>
+                        </div>
+                        <div class="example-card">
+                            <h4>Staging Table</h4>
+                            <button class="example-btn dbdiagram-example" data-example='Table STG_RAW_EVENTS {
+  event_id varchar(100) [pk]
+  event_type varchar(50)
+  event_timestamp timestamp
+  
+  /* JSON payload */
+  event_data jsonb
+  
+  /* Processing */
+  processed_flag boolean [default: false]
+  processed_at timestamp
+  error_message text
+  
+  Note: "Raw events from Kafka stream"
+}'>Load Example</button>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-info">
+                        <h4>📌 Supported Features</h4>
+                        <ul>
+                            <li>Column names and data types</li>
+                            <li>Primary keys, foreign keys, unique constraints</li>
+                            <li>Default values and null constraints</li>
+                            <li>Comments and section headers</li>
+                            <li>Table notes and documentation</li>
+                            <li>Auto-generates template columns for documentation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ for Obsidian users | Click any template to copy to clipboard</p>
+    </footer>
+
+    <div id="toast" class="toast">Copied to clipboard!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
